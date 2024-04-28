@@ -1,335 +1,130 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Stylesheet -->
-    <link href="css/vendor/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/vendor/fontawesome.css">
-    <link rel="stylesheet" href="css/vendor/brands.css">
-    <link rel="stylesheet" href="css/vendor/regular.css">
-    <link rel="stylesheet" href="css/vendor/solid.css">
-    <link rel="stylesheet" href="css/vendor/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Housedeco - Services</title>
-</head>
-
-<body id="top">
-    <script src="js/vendor/bootstrap.bundle.min.js"></script>
-    <script src="js/vendor/jquery.min.js"></script>
-    <script src="js/vendor/swiper-bundle.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/swiper-script.js"></script>
-    <script src="js/submit-form.js"></script>
-    <script src="js/vendor/isotope.pkgd.min.js"></script>
-
-    <!-- Header -->
-    <section class="bg-dark-color py-4 border-bottom border-dark-gray font-1">
+---
+---
+<main>
+    <section class="section position-relative" style="background-image: url(image/dummy-img-1920x900.jpg);">
         <div class="r-container">
-            <div
-                class="d-flex flex-lg-row flex-column align-items-center justify-content-lg-between justify-content-center gap-3">
-                <div class="d-flex flex-lg-row flex-column align-items-center gap-3">
-                    <div class="d-flex flex-row gap-3  align-items-center">
-                        <i class="fa-solid fa-location-dot accent-color fs-4"></i>
-                        <span class="text-white">123th Roundstreet, Pekanbaru.</span>
-                    </div>
-                    <div class="d-flex flex-row gap-3  align-items-center">
-                        <i class="fa-solid fa-phone accent-color fs-4"></i>
-                        <span class="text-white">000 123 456 789</span>
-                    </div>
+            <div class="image-overlay"></div>
+            <div class="d-flex flex-column position-relative py-5" style="z-index: 2;">
+                <h2 class="text-white">PRICING</h2>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb fw-bold">
+                        <li class="breadcrumb-item"><a href="index.html">HOME</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">PRICING</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="r-container">
+            <div class="row row-cols-1 row-cols-lg-2">
+                <div class="col">
+                    <img src="image/dummy-img-600x400.jpg" alt="" class="img-fluid">
                 </div>
-                <div class="d-flex flex-row gap-3  align-items-center">
-                    <i class="fa-solid fa-clock accent-color fs-4"></i>
-                    <span class="text-white">Opening : Mon-Fri 08:00 - 17:00</span>
+                <div class="col">
+                    <div class="d-flex flex-column gap-3">
+                        <h5 class="accent-color font-1 fw-semibold">IMPROVING YOUR LIFE</h5>
+                        <h3 class="text-black font-2 fw-semibold">MAKE YOUR LIVING SPACE</h3>
+                        <p class="text-gray font-1">
+                            Vivamus vehicula nulla elit, ut gravida nunc accumsan nec. Aenean leo orci, posuere quis
+                            rhoncus ut, semper sit amet tortor. Mauris eget augue vel dui vehicula finibus. Sed
+                            posuere
+                            commodo odio sit amet facilisis. Vestibulum tristique diam at imperdiet blandit.
+                            <br><br>
+                            Nulla feugiat aliquam blandit. Etiam id ultricies erat. Suspendisse malesuada, neque et
+                            auctor efficitur, sem nisl ullamcorper nisl, quis tincidunt nisi libero ut sapien.
+                            Mauris a
+                            vulputate mi.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="bg-dark-color font-2 sticky-top">
+
+    <section class="section background-3">
         <div class="r-container">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <a class="navbar-brand logo-container" href="index.html">
-                        <img src="image/logo.png" alt="" class="img-fluid">
-                    </a>
-                    <button class="navbar-toggler accent-color" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fa-solid fa-bars-staggered"></i>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-3">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="index.html">HOME</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    ABOUT
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="about_us.html">ABOUT US</a></li>
-                                    <li><a class="dropdown-item" href="history.html">HISTORY</a></li>
-                                    <li><a class="dropdown-item" href="team.html">OUR TEAM</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle active" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    SERVICES
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="services.html">SERVICES</a></li>
-                                    <li><a class="dropdown-item active" href="pricing.html">PRICING</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    PAGES
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="project.html">PROJECT</a></li>
-                                    <li><a class="dropdown-item" href="project_detail.html">PROJECT DETAIL</a></li>
-                                    <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">CONTACT</a>
-                            </li>
-                        </ul>
+            <div class="row row-cols-1 row-cols-lg-2">
+                <div class="col">
+                    <div class="d-flex flex-column gap-3">
+                        <h5 class="accent-color font-1 fw-semibold">IMPROVING YOUR LIFE</h5>
+                        <h3 class="text-black font-2 fw-semibold">GREAT OFFER <br> FOR YOU</h3>
+                        <p class="text-gray font-1">
+                            Integer eleifend at tortor et finibus. Pellentesque nec nisi arcu. Ut ante ex, pulvinar
+                            eget
+                            purus nec, varius rutrum erat. Aliquam elementum non sapien pretium faucibus. In
+                            convallis
+                            maximus turpis.
+                        </p>
                     </div>
                 </div>
-            </nav>
+                <div class="col">
+                    <img src="image/dummy-img-600x400.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="pricing-wrapper">
+                <div class="row row-cols-1 row-cols-lg-3">
+                    <div class="col mb-3">
+                        <div class="pricing-container shadow gap-3">
+                            <div class="pricing-tag"></div>
+                            <h6 class="accent-color font-2 fw-bold">DESIGN ADVICES</h6>
+                            <p class="text-gray">Donec rutrum felis est, at sollicitudin dui auctor vel</p>
+                            <div class="pricing-price font-1">
+                                <span class="fs-3">$</span>
+                                <h3>800</h3>
+                            </div>
+                            <div class="d-flex flex-column gap-3 mb-4" style="font-size: 14px;">
+                                <span class="text-body-secondary font-2 fw-bold">GENERAL LIVING SPACE ADVICES</span>
+                                <span class="text-body-secondary font-2 fw-bold">RENNOVATION ADVICES</span>
+                                <span class="text-body-secondary font-2 fw-bold">INTERIOR DESIGN ADVICES</span>
+                                <span class="text-body-secondary font-2 fw-bold">FURNITURE REORGANIZATION</span>
+                            </div>
+                            <a href="" type="button" class="btn bg-dark-color bg-accent-color-hover text-white fw-bold font-1 rounded-0">READ MORE</a>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="pricing-container shadow gap-3">
+                            <div class="pricing-tag"></div>
+                            <h6 class="accent-color font-2 fw-bold">FURNITURE DESIGN</h6>
+                            <p class="text-gray">Donec rutrum felis est, at sollicitudin dui auctor vel</p>
+                            <div class="pricing-price font-1">
+                                <span class="fs-3">$</span>
+                                <h3>900</h3>
+                            </div>
+                            <div class="d-flex flex-column gap-3 mb-4" style="font-size: 14px;">
+                                <span class="text-body-secondary font-2 fw-bold">FURNITURE FOR LIVING ROOM</span>
+                                <span class="text-body-secondary font-2 fw-bold">FURNITURE REFURBISHMENT</span>
+                                <span class="text-body-secondary font-2 fw-bold">SOFAS AND AMCHAIRS</span>
+                                <span class="text-body-secondary font-2 fw-bold">TABLES AND CHAIRS</span>
+                            </div>
+                            <a href="" type="button" class="btn bg-dark-color bg-accent-color-hover text-white fw-bold font-1 rounded-0">READ MORE</a>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="pricing-container exclusive shadow gap-3">
+                            <div class="pricing-tag"></div>
+                            <h6 class="accent-color font-2 fw-bold">FURNITURE DESIGN</h6>
+                            <p class="text-gray">Donec rutrum felis est, at sollicitudin dui auctor vel</p>
+                            <div class="pricing-price font-1">
+                                <span class="fs-3">$</span>
+                                <h3>900</h3>
+                            </div>
+                            <div class="d-flex flex-column gap-3 mb-4" style="font-size: 14px;">
+                                <span class="text-white font-2 fw-bold">GENERAL LIVING SPACE ADVICES</span>
+                                <span class="text-white font-2 fw-bold">RENNOVATION ADVICES</span>
+                                <span class="text-white font-2 fw-bold">INTERIOR DESIGN ADVICES</span>
+                                <span class="text-white font-2 fw-bold">FURNITURE REORGANIZATION</span>
+                                <span class="text-white font-2 fw-bold">LARGE PROJECT INCLUDED</span>
+                                <span class="text-white font-2 fw-bold">COMPLETE HOME REDESIGN</span>
+                                <span class="text-white font-2 fw-bold">INTERIOR AND EXTERIOR WORKS</span>
+                            </div>
+                            <a href="" type="button" class="btn btn-accent-light fw-bold font-1 rounded-0">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <!-- End Of Header -->
 
-    <main>
-        <section class="section position-relative" style="background-image: url(image/dummy-img-1920x900.jpg);">
-            <div class="r-container">
-                <div class="image-overlay"></div>
-                <div class="d-flex flex-column position-relative py-5" style="z-index: 2;">
-                    <h2 class="text-white">PRICING</h2>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb fw-bold">
-                            <li class="breadcrumb-item"><a href="index.html">HOME</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">PRICING</li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="r-container">
-                <div class="row row-cols-1 row-cols-lg-2">
-                    <div class="col">
-                        <img src="image/dummy-img-600x400.jpg" alt="" class="img-fluid">
-                    </div>
-                    <div class="col">
-                        <div class="d-flex flex-column gap-3">
-                            <h5 class="accent-color font-1 fw-semibold">IMPROVING YOUR LIFE</h5>
-                            <h3 class="text-black font-2 fw-semibold">MAKE YOUR LIVING SPACE</h3>
-                            <p class="text-gray font-1">
-                                Vivamus vehicula nulla elit, ut gravida nunc accumsan nec. Aenean leo orci, posuere quis
-                                rhoncus ut, semper sit amet tortor. Mauris eget augue vel dui vehicula finibus. Sed
-                                posuere
-                                commodo odio sit amet facilisis. Vestibulum tristique diam at imperdiet blandit.
-                                <br><br>
-                                Nulla feugiat aliquam blandit. Etiam id ultricies erat. Suspendisse malesuada, neque et
-                                auctor efficitur, sem nisl ullamcorper nisl, quis tincidunt nisi libero ut sapien.
-                                Mauris a
-                                vulputate mi.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section background-3">
-            <div class="r-container">
-                <div class="row row-cols-1 row-cols-lg-2">
-                    <div class="col">
-                        <div class="d-flex flex-column gap-3">
-                            <h5 class="accent-color font-1 fw-semibold">IMPROVING YOUR LIFE</h5>
-                            <h3 class="text-black font-2 fw-semibold">GREAT OFFER <br> FOR YOU</h3>
-                            <p class="text-gray font-1">
-                                Integer eleifend at tortor et finibus. Pellentesque nec nisi arcu. Ut ante ex, pulvinar
-                                eget
-                                purus nec, varius rutrum erat. Aliquam elementum non sapien pretium faucibus. In
-                                convallis
-                                maximus turpis.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <img src="image/dummy-img-600x400.jpg" alt="" class="img-fluid">
-                    </div>
-                </div>
-                <div class="pricing-wrapper">
-                    <div class="row row-cols-1 row-cols-lg-3">
-                        <div class="col mb-3">
-                            <div class="pricing-container shadow gap-3">
-                                <div class="pricing-tag"></div>
-                                <h6 class="accent-color font-2 fw-bold">DESIGN ADVICES</h6>
-                                <p class="text-gray">Donec rutrum felis est, at sollicitudin dui auctor vel</p>
-                                <div class="pricing-price font-1">
-                                    <span class="fs-3">$</span>
-                                    <h3>800</h3>
-                                </div>
-                                <div class="d-flex flex-column gap-3 mb-4" style="font-size: 14px;">
-                                    <span class="text-body-secondary font-2 fw-bold">GENERAL LIVING SPACE ADVICES</span>
-                                    <span class="text-body-secondary font-2 fw-bold">RENNOVATION ADVICES</span>
-                                    <span class="text-body-secondary font-2 fw-bold">INTERIOR DESIGN ADVICES</span>
-                                    <span class="text-body-secondary font-2 fw-bold">FURNITURE REORGANIZATION</span>
-                                </div>
-                                <a href="" type="button" class="btn bg-dark-color bg-accent-color-hover text-white fw-bold font-1 rounded-0">READ MORE</a>
-                            </div>
-                        </div>
-                        <div class="col mb-3">
-                            <div class="pricing-container shadow gap-3">
-                                <div class="pricing-tag"></div>
-                                <h6 class="accent-color font-2 fw-bold">FURNITURE DESIGN</h6>
-                                <p class="text-gray">Donec rutrum felis est, at sollicitudin dui auctor vel</p>
-                                <div class="pricing-price font-1">
-                                    <span class="fs-3">$</span>
-                                    <h3>900</h3>
-                                </div>
-                                <div class="d-flex flex-column gap-3 mb-4" style="font-size: 14px;">
-                                    <span class="text-body-secondary font-2 fw-bold">FURNITURE FOR LIVING ROOM</span>
-                                    <span class="text-body-secondary font-2 fw-bold">FURNITURE REFURBISHMENT</span>
-                                    <span class="text-body-secondary font-2 fw-bold">SOFAS AND AMCHAIRS</span>
-                                    <span class="text-body-secondary font-2 fw-bold">TABLES AND CHAIRS</span>
-                                </div>
-                                <a href="" type="button" class="btn bg-dark-color bg-accent-color-hover text-white fw-bold font-1 rounded-0">READ MORE</a>
-                            </div>
-                        </div>
-                        <div class="col mb-3">
-                            <div class="pricing-container exclusive shadow gap-3">
-                                <div class="pricing-tag"></div>
-                                <h6 class="accent-color font-2 fw-bold">FURNITURE DESIGN</h6>
-                                <p class="text-gray">Donec rutrum felis est, at sollicitudin dui auctor vel</p>
-                                <div class="pricing-price font-1">
-                                    <span class="fs-3">$</span>
-                                    <h3>900</h3>
-                                </div>
-                                <div class="d-flex flex-column gap-3 mb-4" style="font-size: 14px;">
-                                    <span class="text-white font-2 fw-bold">GENERAL LIVING SPACE ADVICES</span>
-                                    <span class="text-white font-2 fw-bold">RENNOVATION ADVICES</span>
-                                    <span class="text-white font-2 fw-bold">INTERIOR DESIGN ADVICES</span>
-                                    <span class="text-white font-2 fw-bold">FURNITURE REORGANIZATION</span>
-                                    <span class="text-white font-2 fw-bold">LARGE PROJECT INCLUDED</span>
-                                    <span class="text-white font-2 fw-bold">COMPLETE HOME REDESIGN</span>
-                                    <span class="text-white font-2 fw-bold">INTERIOR AND EXTERIOR WORKS</span>
-                                </div>
-                                <a href="" type="button" class="btn btn-accent-light fw-bold font-1 rounded-0">READ MORE</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <footer>
-        <section class="section footer-bg py-5">
-            <div class="r-container">
-                <div class="row row-cols-1 row-cols-lg-2">
-                    <div class="col mb-3">
-                        <div class="d-flex flex-column gap-3">
-                            <div class="logo-container">
-                                <img src="image/logo.png" alt="" class="img-fluid">
-                            </div>
-                            <p class="text-gray">
-                                Nunc a purus sit amet nulla porttitor auctor vitae eu purus. Suspendisse non
-                                bibendum lectus. Mauris ut dignissim arcu, vel euismod mi. Pellentesque ut velit
-                                dictum, dignissim dui non, pulvinar lectus. Etiam non mi vestibulum, aliquam lacus
-                                mattis.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col mb-3">
-                        <div class="row row-cols-1 row-cols-lg-2">
-                            <div class="col col-lg-5 mb-3">
-                                <h6 class="accent-color font-1 mb-3">OTHER PAGES</h6>
-                                <div class="d-flex flex-column gap-2 font-1">
-                                    <a href="" class="d-flex flex-row gap-4 align-items-center link"><i
-                                            class="fa-solid fa-plus"></i> Privacy Policy</a>
-                                    <a href="" class="d-flex flex-row gap-4 align-items-center link"><i
-                                            class="fa-solid fa-plus"></i> Term of Service</a>
-                                    <a href="" class="d-flex flex-row gap-4 align-items-center link"><i
-                                            class="fa-solid fa-plus"></i> Disclaimer</a>
-                                    <a href="" class="d-flex flex-row gap-4 align-items-center link"><i
-                                            class="fa-solid fa-plus"></i> Credit</a>
-                                    <a href="" class="d-flex flex-row gap-4 align-items-center link"><i
-                                            class="fa-solid fa-plus"></i> FAQ</a>
-                                </div>
-                            </div>
-                            <div class="col col-lg-7 mb-3">
-                                <div class="d-flex flex-column gap-3">
-                                    <div class="w-100 overflow-hidden">
-                                        <!-- Slider main container -->
-                                        <div class="swiper-footer-1">
-                                            <!-- Additional required wrapper -->
-                                            <div class="swiper-wrapper">
-                                                <!-- Slides -->
-                                                <div class="swiper-slide"><img src="image/dummy-img-600x400.jpg" alt=""
-                                                        class="img-fluid"></div>
-                                                <div class="swiper-slide"><img src="image/dummy-img-600x400.jpg" alt=""
-                                                        class="img-fluid"></div>
-                                                <div class="swiper-slide"><img src="image/dummy-img-600x400.jpg" alt=""
-                                                        class="img-fluid"></div>
-                                                <div class="swiper-slide"><img src="image/dummy-img-600x400.jpg" alt=""
-                                                        class="img-fluid"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-100 overflow-hidden">
-                                        <!-- Slider main container -->
-                                        <div class="swiper-footer-2">
-                                            <!-- Additional required wrapper -->
-                                            <div class="swiper-wrapper">
-                                                <!-- Slides -->
-                                                <div class="swiper-slide"><img src="image/dummy-img-600x400.jpg" alt=""
-                                                        class="img-fluid"></div>
-                                                <div class="swiper-slide"><img src="image/dummy-img-600x400.jpg" alt=""
-                                                        class="img-fluid"></div>
-                                                <div class="swiper-slide"><img src="image/dummy-img-600x400.jpg" alt=""
-                                                        class="img-fluid"></div>
-                                                <div class="swiper-slide"><img src="image/dummy-img-600x400.jpg" alt=""
-                                                        class="img-fluid"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </section>
-        <section class="bg-dark-color py-4">
-            <div class="r-container">
-                <div
-                    class="d-flex flex-lg-row flex-column justify-content-center text-center justify-content-between gap-3">
-                    <span class="text-white">
-                        Copyright 2023 © Housedeco | Powered by Rometheme Studio
-                    </span>
-                    <div class="d-flex justify-content-center flex-row gap-3">
-                        <a href="https://www.facebook.com" class="accent-color">Facebook</a>
-                        <a href="https://www.instagramcom" class="accent-color">Instagram</a>
-                        <a href="https://www.pinterest.com" class="accent-color">Pinterest</a>
-                        <a href="#top" class="text-white"><i class="fa-solid fa-arrow-up"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </footer>
-
-    <script src="js/vendor/fslightbox.js"></script>
-</body>
-
-</html>
+</main>

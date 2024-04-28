@@ -1,0 +1,24 @@
+global:
+  tagline: English
+  about: About
+  twitter: Twitter
+  github: GitHub
+langs:
+  it: Italiano
+  en: English
+  es: Español
+pages:
+  example: example
+  includeexample: The following text is a Jekyll include liquid tag parameter
+titles:
+  pagination: Pagination
+contact_us:
+  contact_us: Контакн ас
+  have_a_question: Маєш питання ?
+  home: HOME
+  phone_number: 000 123 456 789
+footer:
+  text: "укр  Nunc a purus sit amet nulla porttitor auctor vitae eu purus. Suspendisse non
+                          bibendum lectus. Mauris ut dignissim arcu, vel euismod mi. Pellentesque ut velit
+                          dictum, dignissim dui non, pulvinar lectus. Etiam non mi vestibulum, aliquam lacus
+                          mattis."

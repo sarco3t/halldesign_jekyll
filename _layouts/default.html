@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="{{ "/css/vendor/bootstrap.min.css" | prepend: site.baseurl_root }}">
+    <link rel="stylesheet" href="{{ "/css/vendor/fontawesome.css" | prepend: site.baseurl_root }}">
+    <link rel="stylesheet" href="{{ "/css/vendor/brands.css" | prepend: site.baseurl_root }}">
+    <link rel="stylesheet" href="{{ "/css/vendor/regular.css" | prepend: site.baseurl_root }}">
+    <link rel="stylesheet" href="{{ "/css/vendor/solid.css" | prepend: site.baseurl_root }}">
+    <link rel="stylesheet" href="{{ "/css/vendor/swiper-bundle.min.css" | prepend: site.baseurl_root }}">
+    <link rel="stylesheet" href="{{ "/css/style.css" | prepend: site.baseurl_root }}">
+    <title>Housedeco - Home</title>
+</head>
+
+<body id="top">
+    <script src="{{ "/js/vendor/bootstrap.bundle.min.js" | prepend: site.baseurl_root }}"></script>
+    <script src="{{ "/js/vendor/jquery.min.js" | prepend: site.baseurl_root }}"></script>
+    <script src="{{ "/js/vendor/swiper-bundle.min.js" | prepend: site.baseurl_root }}"></script>
+    <script src="{{ "/js/script.js" | prepend: site.baseurl_root }}"></script>
+    <script src="{{ "/js/swiper-script.js" | prepend: site.baseurl_root }}"></script>
+    <script src="{{ "/js/submit-form.js" | prepend: site.baseurl_root }}"></script>
+    <script src="{{ "/js/vendor/isotope.pkgd.min.js" | prepend: site.baseurl_root }}"></script>
+    {% include header.html %}
+    {{ content }}
+    {% include footer.html %}
+    <script src="{{ "/js/vendor/fslightbox.js" | prepend: site.baseurl_root }}"></script>
+</body>
+</html>
