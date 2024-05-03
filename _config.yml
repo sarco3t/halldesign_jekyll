@@ -40,8 +40,9 @@ plugins:
   - jekyll-feed
   - jekyll-multiple-languages-plugin
 
-email: halldesign@email.com
-
+email: hall.designes@gmail.com
+ua_phone_number: +38(098)62-84-391
+eu_phone_number: ""
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

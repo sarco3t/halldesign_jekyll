@@ -13,12 +13,73 @@ pages:
 titles:
   pagination: Pagination
 contact_us:
-  contact_us: Контакн ас
-  have_a_question: Маєш питання ?
-  home: HOME
-  phone_number: 000 123 456 789
+  contact_us: КОНТАКТИ
+  have_a_question: "Зв'язатися з нами:"
+  address: м. Хмельницький, IQ-Center
+  form:
+    name: Ім'я
+    phone: Телефон
+    square: Площа
+    message: Про проект
+    submit: НАДІСЛАТИ
+    required: The field is required.
+    error: Something Wrong ! Send Form Failed.
+header:
+  opening: Пн - Пт 10:00 - 18:00
+  home: ГОЛОВНА
+  about: ПРО НАС
+  about_us: ОФІС
+  history: ІСТОРІЯ
+  team: КОМАНДА
+  services: ПОСЛУГИ
+  pricing: ЦІНИ
+  portfolio: ПОРТФОЛІО
+  private_projects: ЖИТЛОВІ ПРОЕКТИ
+  commercial_projects: КОМЕРЦІЙНІ ПРОЕКТИ
+  landscape_projects: ЛАНДШАФТ & АРХІТЕКТУРА
+  contact_us: КОНТАКТИ
+home:
+  main:
+    text_1: ПЕРЕТВОРЮЄМО ПРОСТІР
+    text_2: В МИСТЕЦТВО 
+    left_button: ПОРТФОЛІО
+    right_button: ЦІНИ
+
 footer:
   text: "укр  Nunc a purus sit amet nulla porttitor auctor vitae eu purus. Suspendisse non
                           bibendum lectus. Mauris ut dignissim arcu, vel euismod mi. Pellentesque ut velit
                           dictum, dignissim dui non, pulvinar lectus. Etiam non mi vestibulum, aliquam lacus
                           mattis."
+services:
+  services: ПОСЛУГИ
+  main:
+    subtitle: Відкрий себе
+    title: ДАВАЙ ДОДАМО ОСОБЛИВОСТІ В ТВІЙ ПРОСТІР
+    description: "Тут не про «індивідуальний підхід» який всі шукають, а про ваш особливий настрій, ваш вайб, ваші звички і спосіб життя, ваш бізнес і хобі. Про Вас."
+    button_text: "ПОРТФОЛІО"
+    our_service: МИ РОЗРОБЛЯЄМО
+    section_subtitle: WE DESIGN MODREN AND ELEGANT
+    section_description: "Aenean erat ipsum, euismod auctor augue ac, hendrerit lacinia lorem. Ut nec leo id justo  luctus accumsan sed id dolor. Sed ac rhoncus diam, sit amet tempor ligula."
+    section_button: CONTACT_US
+  work_section:
+    subtitle: ЯК ВІДБУВАЄТЬСЯ РОБОТА?
+    title: ЕТАПИ РОЗРОБКИ ДИЗАЙН ПРОЕКТУ
+    description: Кількість етапів і терміни розробки залежать від площі і наповненості проекту та перші два етапи є обов'язковими у всіх пакетах
+    step1:
+      title: ОБМІРИ
+      description: Виїзд на об'єкт, складання обмірного плану
+    step2:
+      title: ПЛАНУВАННЯ
+      description: Розробка варіантів розташування меблів, план монтажу/демонтажу, схеми інженерних мереж
+    step3:
+      title: ВІЗУАЛІЗАЦІЯ
+      description: Створення фоторелістичних візуалізацій інтер'єру, розробка концепту, створення огляду 360
+    step4:
+      title: РОЗРОБКА КРЕСЛЕНЬ ТА СПЕЦИФІКАЦІЙ
+      description: Усі креслення для будівельних робіт, креслення меблів "під замовлення", креслення складних вузлів, підбір матеріалів, меблів, освітлення, сантехніки та декору з посиланнями на магазини.
+our_testimonial:
+  partners: OUR PARTNER
+  partners_text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
+  subtitle: OUR TESTIMONIAL
+  title: WHAT OUR CLIENT SAY ?
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus necullamcorper mattis, pulvinar dapibus leo."

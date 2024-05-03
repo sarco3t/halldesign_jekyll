@@ -15,10 +15,70 @@ titles:
 contact_us:
   contact_us: CONTACT US
   have_a_question: HAVE A QUESTION ?
+  address: Zarichanska st. 13, Khmelnytskyi, Ukraine
+  form:
+    name: Name
+    phone: Phone
+    square: Square
+    message: Message
+    submit: SUBMIT
+    required: The field is required.
+    error: Something Wrong ! Send Form Failed.
+header:
+  opening: Mon - Fri 10:00 - 18:00
   home: HOME
-  phone_number: 000 123 456 789
+  about: ABOUT
+  about_us: ABOUT US
+  history: HISTORY
+  team: OUR TEAM
+  services: SERVICES
+  pricing: PRICING
+  portfolio: PORTFOLIO
+  private_projects: PRIVATE PROJECTS
+  commercial_projects: COMMERCIAL PROJECTS
+  landscape_projects: LANDSCAPE & ARCHITECTURE
+  contact_us: CONTACT
+home:
+  main:
+    text_1: TRANSFORM SPACE
+    text_2: INTO ART
+    left_button: PROJECTS
+    right_button: PRICING
 footer:
   text: " eng Nunc a purus sit amet nulla porttitor auctor vitae eu purus. Suspendisse non
                             bibendum lectus. Mauris ut dignissim arcu, vel euismod mi. Pellentesque ut velit
                             dictum, dignissim dui non, pulvinar lectus. Etiam non mi vestibulum, aliquam lacus
                             mattis."
+services:
+  services: SERVICES
+  main:
+    subtitle: REVEAL YOURSELF
+    title: LET'S ADD SOMETHING SPECIAL IN YOUR SPACE
+    description: "It's not just about the 'individual approach' that everyone is looking for; it's about your unique mood, your vibe, your habits, your lifestyle, your business, and your hobbies—things that reveal who you are."
+    button_text: PROJECTS
+    our_service: WE CREATE
+    section_subtitle: WE DESIGN MODREN AND ELEGANT
+    section_description: "Aenean erat ipsum, euismod auctor augue ac, hendrerit lacinia lorem. Ut nec leo id justo  luctus accumsan sed id dolor. Sed ac rhoncus diam, sit amet tempor ligula."
+    section_button: CONTACT_US
+  work_section:
+    subtitle: HOW DO WE WORK ?
+    title: WE DESIGN FOR YOUR SATISFACTION
+    description: "In hac habitasse platea dictumst. Aliquam fringilla est ut vulputate sollicitudin. Fusce fringilla feugiat ipsum, nec rhoncus sapien dictum sed. Phasellus quis libero elit."
+    step1:
+      title: CONCEPT
+      description: Mauris dapibus consectetur enim a dictum. Ut in rhoncus sem.
+    step2:
+      title: CONCEPT
+      description: Mauris dapibus consectetur enim a dictum. Ut in rhoncus sem.
+    step3:
+      title: CONCEPT
+      description: Mauris dapibus consectetur enim a dictum. Ut in rhoncus sem.
+    step4:
+      title: CONCEPT
+      description: Mauris dapibus consectetur enim a dictum. Ut in rhoncus sem.
+our_testimonial:
+  partners: OUR PARTNER
+  partners_text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
+  subtitle: OUR TESTIMONIAL
+  title: WHAT OUR CLIENT SAY ?
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus necullamcorper mattis, pulvinar dapibus leo."

@@ -6,16 +6,18 @@
                 <div class="d-flex flex-lg-row flex-column align-items-center gap-3">
                     <div class="d-flex flex-row gap-3  align-items-center">
                         <i class="fa-solid fa-location-dot accent-color fs-4"></i>
-                        <span class="text-white">123th Roundstreet, Pekanbaru.</span>
+                        <span class="text-white">{% t contact_us.address %}</span>
                     </div>
                     <div class="d-flex flex-row gap-3  align-items-center">
                         <i class="fa-solid fa-phone accent-color fs-4"></i>
-                        <span class="text-white">000 123 456 789</span>
+                        <a href="tel:{{ site.ua_phone_number }}">
+                            <span class="text-white">{{ site.ua_phone_number }}</span>
+                        </a>
                     </div>
                 </div>
                 <div class="d-flex flex-row gap-3  align-items-center">
                     <i class="fa-solid fa-clock accent-color fs-4"></i>
-                    <span class="text-white">Opening : Mon-Fri 08:00 - 17:00</span>
+                    <span class="text-white">{% t header.opening %}</span>
                 </div>
             </div>
         </div>
@@ -35,42 +37,43 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-3">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                                <a class="nav-link active" aria-current="page" href="index.html">{% t header.home %}</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
-                                    ABOUT
+                                    {% t header.about %}
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="about_us.html">ABOUT US</a></li>
-                                    <li><a class="dropdown-item" href="history.html">HISTORY</a></li>
-                                    <li><a class="dropdown-item" href="team.html">OUR TEAM</a></li>
+                                    <li><a class="dropdown-item" href="about_us.html">{% t header.about %}</a></li>
+                                    <li><a class="dropdown-item" href="history.html">{% t header.history %}</a></li>
+                                    <li><a class="dropdown-item" href="team.html">{% t header.team %}</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
-                                    SERVICES
+                                    {% t header.services %}
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="services.html">SERVICES</a></li>
-                                    <li><a class="dropdown-item" href="pricing.html">PRICING</a></li>
+                                    <li><a class="dropdown-item" href="services.html">{% t header.services %}</a></li>
+                                    <li><a class="dropdown-item" href="pricing.html">{% t header.pricing %}</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
-                                    PAGES
+                                    {% t header.portfolio %}
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="project.html">PROJECT</a></li>
-                                    <li><a class="dropdown-item" href="project_detail.html">PROJECT DETAIL</a></li>
-                                    <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                                    <li><a class="dropdown-item" href="project.html">{% t header.private_projects %}</a></li>
+                                    <li><a class="dropdown-item" href="project.html">{% t header.commercial_projects %}</a></li>
+                                    <li><a class="dropdown-item" href="project.html">{% t header.landscape_projects %}</a></li>
+                                    <!-- <li><a class="dropdown-item" href="project_detail.html">PROJECT DETAIL</a></li> -->
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html">CONTACT</a>
+                                <a class="nav-link" href="contact.html">{% t header.contact_us %}</a>
                             </li>
                         </ul>
                     </div>
