@@ -16,6 +16,9 @@ contact_us:
   contact_us: КОНТАКТИ
   have_a_question: "Зв'язатися з нами:"
   address: м. Хмельницький, IQ-Center
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus necullamcorper mattis, pulvinar dapibus leo."
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus necullamcorper mattis, pulvinar dapibus leo."
+  message_sent: Your Message Successfully Send.
   form:
     name: Ім'я
     phone: Телефон
@@ -38,6 +41,7 @@ header:
   commercial_projects: КОМЕРЦІЙНІ ПРОЕКТИ
   landscape_projects: ЛАНДШАФТ & АРХІТЕКТУРА
   contact_us: КОНТАКТИ
+
 home:
   main:
     text_1: ПЕРЕТВОРЮЄМО ПРОСТІР
@@ -83,3 +87,31 @@ our_testimonial:
   subtitle: OUR TESTIMONIAL
   title: WHAT OUR CLIENT SAY ?
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus necullamcorper mattis, pulvinar dapibus leo."
+welcome:
+  subtitle: WELCOME TO HOUSEDECO
+  title: INTERIOR DESIGN
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
+  steps:
+    step1:
+      title: INNOVATIVE
+      description: "Nulla a interdum ipsum. Proin orci nunc, efficitur quis vehicula ac, iaculis et massa. Etiam interdum, justo finibus hendrerit vulputate, augue massa porta tellus, eget imperdiet nisl libero at risus."
+    step2:
+      title: CREATIVE
+      description: "Nulla in eros sit amet sapien viverra pretium. Ut luctus libero ipsum, eget varius nibh dapibus vitae. Sed non enim felis. Quisque eget tincidunt ligula. Quisque odio odio."
+team:
+  title: OUR TEAM
+  section:
+    subtitle: MEET OUR DESIGNER
+    title: OUR PROFESSIONAL
+    description: "Cras sagittis justo enim, eu sagittis purus molestie vitae. Vestibulum porttitor in massa feugiat blandit. Nunc ac viverra magna. Etiam dictum pellentesque libero a porttitor. Vestibulum dapibus, metus a molestie tincidunt, tortor nisl mollis mi, vitae commodo lorem mi auctor tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus."
+cta:
+  title: NEED TO REDESIGN YOUR LIVING SPACE ? HIRE US NOW
+  button: CONTACT US
+video:
+  main_title: WATCH VIDEO
+  main_title:  WE GAVE THE BEST
+  title: INNOVATIVE IDEAS STYLISH DESIGNS
+  description: "Aenean erat ipsum, euismod auctor augue ac, hendrerit lacinia lorem. Ut nec leo id justo
+                        luctus accumsan sed id dolor. Sed ac rhoncus diam, sit amet tempor ligula. Cras maximus
+                        magna quis vestibulum lobortis."
+  button: READ MORE

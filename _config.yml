@@ -43,6 +43,23 @@ plugins:
 email: hall.designes@gmail.com
 ua_phone_number: +38(098)62-84-391
 eu_phone_number: ""
+behance: https://www.behance.net
+instagram: https://www.instagram.com
+pinterest: https://www.pinterest.com
+designers:
+  ua:
+    - role: Дизайнер  
+      name: Біба
+    - role: Дизайнер  
+      name: Біба2
+    - role: Дизайнер  
+      name: Біба3
+    - role: Дизайнер  
+      name: Біба4
+
+  en:
+    - role: Designer  
+      name: Biba
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

@@ -5,11 +5,11 @@
         <div class="r-container">
             <div class="image-overlay"></div>
             <div class="d-flex flex-column position-relative py-5" style="z-index: 2;">
-                <h2 class="text-white">OUR TEAM</h2>
+                <h2 class="text-white">{% t team.title %}</h2>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb fw-bold">
-                        <li class="breadcrumb-item"><a href="index.html">HOME</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">OUR TEAM</li>
+                        <li class="breadcrumb-item"><a href="index.html">{% t header.home %}</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">{% t team.title %}</li>
                     </ol>
                 </nav>
             </div>
@@ -19,189 +19,46 @@
     <section class="section">
         <div class="r-container">
             <div class="d-flex flex-column gap-3 text-center">
-                <h5 class="accent-color font-1 fw-semibold">MEET OUR DESIGNER</h5>
-                <h3 class="text-black font-2 fw-semibold">OUR PROFESSIONAL</h3>
+                <h5 class="accent-color font-1 fw-semibold">{% t team.section.subtitle %}</h5>
+                <h3 class="text-black font-2 fw-semibold">{% t team.section.title %}</h3>
                 <p class="text-gray font-1">
-                    Cras sagittis justo enim, eu sagittis purus molestie vitae. Vestibulum porttitor in massa
-                    feugiat blandit. Nunc ac viverra magna. Etiam dictum pellentesque libero a porttitor. Vestibulum
-                    dapibus, metus a molestie tincidunt, tortor nisl mollis mi, vitae commodo lorem mi auctor
-                    tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                    {% t team.section.description %}
                 </p>
                 <div class="row row-cols-1 row-cols-lg-3">
-                    <div class="col">
-                        <div class="team-container">
-                            <div class="team-image">
-                                <img src="image/dummy-img-600x400.jpg" alt="" class="img-fluid">
-                                <div class="team-overlay d-flex justify-content-center align-items-center ">
-                                    <div class="d-flex flex-row gap-3">
-                                        <a type="button" href="https://www.facebook.com" class="social-item">
-                                            <i class="fa-brands fa-facebook-f"></i>
-                                        </a>
-                                        <a type="button" href="https://www.twitter.com" class="social-item">
-                                            <i class="fa-brands fa-twitter"></i>
-                                        </a>
-                                        <a type="button" href="https://www.pinterest.com" class="social-item">
-                                            <i class="fa-brands fa-pinterest"></i>
-                                        </a>
+                    {% for item in site.designers[site.lang] %}
+                        <div class="col">
+                            <div class="team-container">
+                                <div class="team-image">
+                                    <img src="image/dummy-img-600x400.jpg" alt="" class="img-fluid">
+                                    <div class="team-overlay d-flex justify-content-center align-items-center ">
+                                        <div class="d-flex flex-row gap-3">
+                                            <a type="button" href="https://www.facebook.com" class="social-item">
+                                                <i class="fa-brands fa-facebook-f"></i>
+                                            </a>
+                                            <a type="button" href="https://www.twitter.com" class="social-item">
+                                                <i class="fa-brands fa-twitter"></i>
+                                            </a>
+                                            <a type="button" href="https://www.pinterest.com" class="social-item">
+                                                <i class="fa-brands fa-pinterest"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="px-4">
+                                    <div class="team-description shadow d-flex flex-column">
+                                        <h5 class="m-0">{{ item.name }}</h5>
+                                        <span class="text-gray">{{ item.role }}</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="px-4">
-                                <div class="team-description shadow d-flex flex-column">
-                                    <h5 class="m-0">DYAS KARDINAL</h5>
-                                    <span class="text-gray">Designer</span>
-                                </div>
-                            </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="team-container">
-                            <div class="team-image">
-                                <img src="image/dummy-img-600x400.jpg" alt="" class="img-fluid">
-                                <div class="team-overlay d-flex justify-content-center align-items-center ">
-                                    <div class="d-flex flex-row gap-3">
-                                        <a type="button" href="https://www.facebook.com" class="social-item">
-                                            <i class="fa-brands fa-facebook-f"></i>
-                                        </a>
-                                        <a type="button" href="https://www.twitter.com" class="social-item">
-                                            <i class="fa-brands fa-twitter"></i>
-                                        </a>
-                                        <a type="button" href="https://www.pinterest.com" class="social-item">
-                                            <i class="fa-brands fa-pinterest"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="px-4">
-                                <div class="team-description shadow d-flex flex-column">
-                                    <h5 class="m-0">ELSA VERINAL</h5>
-                                    <span class="text-gray">Designer</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="team-container">
-                            <div class="team-image">
-                                <img src="image/dummy-img-600x400.jpg" alt="" class="img-fluid">
-                                <div class="team-overlay d-flex justify-content-center align-items-center ">
-                                    <div class="d-flex flex-row gap-3">
-                                        <a type="button" href="https://www.facebook.com" class="social-item">
-                                            <i class="fa-brands fa-facebook-f"></i>
-                                        </a>
-                                        <a type="button" href="https://www.twitter.com" class="social-item">
-                                            <i class="fa-brands fa-twitter"></i>
-                                        </a>
-                                        <a type="button" href="https://www.pinterest.com" class="social-item">
-                                            <i class="fa-brands fa-pinterest"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="px-4">
-                                <div class="team-description shadow d-flex flex-column">
-                                    <h5 class="m-0">KEAN BERLIN</h5>
-                                    <span class="text-gray">Designer</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="team-container">
-                            <div class="team-image">
-                                <img src="image/dummy-img-600x400.jpg" alt="" class="img-fluid">
-                                <div class="team-overlay d-flex justify-content-center align-items-center ">
-                                    <div class="d-flex flex-row gap-3">
-                                        <a type="button" href="https://www.facebook.com" class="social-item">
-                                            <i class="fa-brands fa-facebook-f"></i>
-                                        </a>
-                                        <a type="button" href="https://www.twitter.com" class="social-item">
-                                            <i class="fa-brands fa-twitter"></i>
-                                        </a>
-                                        <a type="button" href="https://www.pinterest.com" class="social-item">
-                                            <i class="fa-brands fa-pinterest"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="px-4">
-                                <div class="team-description shadow d-flex flex-column">
-                                    <h5 class="m-0">KUMTO WARMING</h5>
-                                    <span class="text-gray">Designer</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="team-container">
-                            <div class="team-image">
-                                <img src="image/dummy-img-600x400.jpg" alt="" class="img-fluid">
-                                <div class="team-overlay d-flex justify-content-center align-items-center ">
-                                    <div class="d-flex flex-row gap-3">
-                                        <a type="button" href="https://www.facebook.com" class="social-item">
-                                            <i class="fa-brands fa-facebook-f"></i>
-                                        </a>
-                                        <a type="button" href="https://www.twitter.com" class="social-item">
-                                            <i class="fa-brands fa-twitter"></i>
-                                        </a>
-                                        <a type="button" href="https://www.pinterest.com" class="social-item">
-                                            <i class="fa-brands fa-pinterest"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="px-4">
-                                <div class="team-description shadow d-flex flex-column">
-                                    <h5 class="m-0">DEKAS</h5>
-                                    <span class="text-gray">Designer</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="team-container">
-                            <div class="team-image">
-                                <img src="image/dummy-img-600x400.jpg" alt="" class="img-fluid">
-                                <div class="team-overlay d-flex justify-content-center align-items-center ">
-                                    <div class="d-flex flex-row gap-3">
-                                        <a type="button" href="https://www.facebook.com" class="social-item">
-                                            <i class="fa-brands fa-facebook-f"></i>
-                                        </a>
-                                        <a type="button" href="https://www.twitter.com" class="social-item">
-                                            <i class="fa-brands fa-twitter"></i>
-                                        </a>
-                                        <a type="button" href="https://www.pinterest.com" class="social-item">
-                                            <i class="fa-brands fa-pinterest"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="px-4">
-                                <div class="team-description shadow d-flex flex-column">
-                                    <h5 class="m-0">HUMS KARDIGAN</h5>
-                                    <span class="text-gray">Designer</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    {% endfor %}
+
                 </div>
             </div>
         </div>
     </section>
     {%- include latest_projects.html -%}
-    <section class="section bg-dark-color py-5">
-        <div class="r-container">
-            <div class="row row-cols-1 row-cols-lg-2 text-center text-lg-start">
-                <div class="col col-lg-7">
-                    <h4 class="text-white">NEED TO REDESIGN YOUR LIVING SPACE ? HIRE US NOW</h4>
-                </div>
-                <div class="col col-lg-5">
-                    <div class="d-flex justify-content-center justify-content-lg-start">
-                        <a href="contact.html" type="button" class="btn btn-accent-light font-1 fw-semibold rounded-0">CONTACT US</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    {%- include cta.html %}
 
 </main>
