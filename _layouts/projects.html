@@ -2,7 +2,7 @@
 layout: default
 ---
 <main>
-    <section class="section position-relative" style="background-image: url(image/dummy-img-1920x900.jpg);">
+    <section class="section position-relative" style="background-image: url({{ page.header_image | prepend: site.url }});">
         <div class="r-container">
             <div class="image-overlay"></div>
             <div class="d-flex flex-column position-relative py-5" style="z-index: 2;">
@@ -28,66 +28,28 @@ layout: default
                     dapibus, metus a molestie tincidunt, tortor nisl mollis mi, vitae commodo lorem mi auctor
                     tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus.
                 </p>
-                <div class="row row-cols-1 row-cols-lg-2 w-100">
-                    <div class="col col-lg-4 mb-3">
-                        <div class="overlay-card" style="background-image: url(image/dummy-img-600x700.jpg);">
-                            <div class="overlay-body gap-3">
-                                <a href="image/dummy-img-600x700.jpg" data-fslightbox="gallery-2" type="button"
-                                    class="btn-outline-circle p-0">
-                                    <i class="fa-solid fa-plus"></i>
-                                </a>
-                                <h5 class="text-white fw-semibold font-2">RESIDENTIAL DESIGN</h5>
-                                <div>
-                                    <a href=" " type="button" class="btn rounded-0 btn-accent-light fw-bold font-2">SEE MORE</a>
-                                </div>
-                            </div>
-                        </div>
+                {%- assign posts =site.categories[page.category] | chunk 2 -%}
+                {% for array in posts reversed %}
+                    <div class="row row-cols-1 row-cols-lg-2 w-100">
+
+                        {%- assign even = forloop.index | modulo: 2 -%}
+                        {% for post in array reversed %}
+                            {% if even== 1 %}
+                                {% if forloop.index == 1 && %}
+                                    {%- include projects/card-1.html post=post -%}
+                                {% else %}
+                                    {%- include projects/card-2.html post=post -%}
+                                {% endif %}
+                            {% else %}
+                                {% if forloop.index == 1 && %}
+                                    {%- include projects/card-2.html post=post-%}
+                                {% else %}
+                                    {%- include projects/card-1.html post=post-%}
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
                     </div>
-                    <div class="col col-lg-8 mb-3">
-                        <div class="overlay-card" style="background-image: url(image/dummy-img-600x700.jpg);">
-                            <div class="overlay-body gap-3">
-                                <a href="image/dummy-img-600x700.jpg" data-fslightbox="gallery-2" type="button"
-                                    class="btn-outline-circle p-0">
-                                    <i class="fa-solid fa-plus"></i>
-                                </a>
-                                <h5 class="text-white fw-semibold font-2">RESIDENTIAL DESIGN</h5>
-                                <div>
-                                    <a href=" " type="button" class="btn rounded-0 btn-accent-light fw-bold font-2">SEE MORE</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row row-cols-1 row-cols-lg-2 w-100">
-                    <div class="col col-lg-8 mb-3">
-                        <div class="overlay-card" style="background-image: url(image/dummy-img-600x700.jpg);">
-                            <div class="overlay-body gap-3">
-                                <a href="image/dummy-img-600x700.jpg" data-fslightbox="gallery-2" type="button"
-                                    class="btn-outline-circle p-0">
-                                    <i class="fa-solid fa-plus"></i>
-                                </a>
-                                <h5 class="text-white fw-semibold font-2">RESIDENTIAL DESIGN</h5>
-                                <div>
-                                    <a href=" " type="button" class="btn rounded-0 btn-accent-light fw-bold font-2">SEE MORE</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col col-lg-4 mb-3">
-                        <div class="overlay-card" style="background-image: url(image/dummy-img-600x700.jpg);">
-                            <div class="overlay-body gap-3">
-                                <a href="image/dummy-img-600x700.jpg" data-fslightbox="gallery-2" type="button"
-                                    class="btn-outline-circle p-0">
-                                    <i class="fa-solid fa-plus"></i>
-                                </a>
-                                <h5 class="text-white fw-semibold font-2">RESIDENTIAL DESIGN</h5>
-                                <div>
-                                    <a href=" " type="button" class="btn rounded-0 btn-accent-light fw-bold font-2">SEE MORE</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </section>

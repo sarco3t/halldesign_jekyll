@@ -36,6 +36,10 @@ defaults:
       path: ""
     values:
       layout: default
+  - scope:
+      path: "image/projects"
+    values:
+      image: true
 plugins:
   - jekyll-feed
   - jekyll-multiple-languages-plugin

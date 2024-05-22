@@ -37,11 +37,11 @@ header:
   services: ПОСЛУГИ
   pricing: ЦІНИ
   portfolio: ПОРТФОЛІО
-  private_projects: ЖИТЛОВІ ПРОЕКТИ
-  commercial_projects: КОМЕРЦІЙНІ ПРОЕКТИ
-  landscape_projects: ЛАНДШАФТ & АРХІТЕКТУРА
   contact_us: КОНТАКТИ
-
+categories:
+  private: ЖИТЛОВІ ПРОЕКТИ
+  commercial: КОМЕРЦІЙНІ ПРОЕКТИ
+  landscape: ЛАНДШАФТ & АРХІТЕКТУРА
 home:
   main:
     text_1: ПЕРЕТВОРЮЄМО ПРОСТІР
@@ -56,6 +56,19 @@ footer:
                           mattis."
 services:
   services: ПОСЛУГИ
+  blocks:
+    block1:
+      title: INTERIOR DESIGN
+      description:  Fusce eleifend lorem et placerat eleifend.
+    block2: 
+      title: OFFICE REDESIGN
+      description:  Fusce eleifend lorem et placerat eleifend.
+    block3:
+      title: INTERIOR DECORATION
+      description:  Fusce eleifend lorem et placerat eleifend.
+    block4:
+      title: FURNITURE PRODUCTION
+      description: Fusce eleifend lorem et placerat eleifend.
   main:
     subtitle: Відкрий себе
     title: ДАВАЙ ДОДАМО ОСОБЛИВОСТІ В ТВІЙ ПРОСТІР
@@ -64,7 +77,7 @@ services:
     our_service: МИ РОЗРОБЛЯЄМО
     section_subtitle: WE DESIGN MODREN AND ELEGANT
     section_description: "Aenean erat ipsum, euismod auctor augue ac, hendrerit lacinia lorem. Ut nec leo id justo  luctus accumsan sed id dolor. Sed ac rhoncus diam, sit amet tempor ligula."
-    section_button: CONTACT_US
+    section_button: CONTACT US
   work_section:
     subtitle: ЯК ВІДБУВАЄТЬСЯ РОБОТА?
     title: ЕТАПИ РОЗРОБКИ ДИЗАЙН ПРОЕКТУ
@@ -115,3 +128,11 @@ video:
                         luctus accumsan sed id dolor. Sed ac rhoncus diam, sit amet tempor ligula. Cras maximus
                         magna quis vestibulum lobortis."
   button: READ MORE
+latest_projects:
+  subtitle: OUR PROJECT
+  title: OUR LATEST PROJECT
+  description: "Cras sagittis justo enim, eu sagittis purus molestie vitae. Vestibulum porttitor in massa
+                feugiat blandit. Nunc ac viverra magna. Etiam dictum pellentesque libero a porttitor. Vestibulum
+                dapibus, metus a molestie tincidunt, tortor nisl mollis mi, vitae commodo lorem mi auctor
+                tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus."
+  more_button: SEE MORE

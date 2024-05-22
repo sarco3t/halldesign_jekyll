@@ -2,15 +2,15 @@
 layout: default
 ---
 <main>
-    <section class="section position-relative" style="background-image: url(image/dummy-img-1920x900.jpg);">
+    <section class="section position-relative" style="background-image: url({{ page.background_image | prepend: site.url }});">
         <div class="r-container">
             <div class="image-overlay"></div>
             <div class="d-flex flex-column position-relative py-5" style="z-index: 2;">
-                <h2 class="text-white">PROJECT DETAIL</h2>
+                <h2 class="text-white">{{ page.title }}</h2>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb fw-bold">
                         <li class="breadcrumb-item"><a href="index.html">HOME</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">PROJECT DETAIL</li>
+                        <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
                     </ol>
                 </nav>
             </div>
@@ -20,42 +20,62 @@ layout: default
     <section class="section">
         <div class="r-container">
             <div class="d-flex flex-column gap-4">
-                <div class="row row-cols-1 row-cols-lg-2 mb-3">
-                    <div class="col col-lg-4">
-                        <div class="d-flex flex-column gap-3">
-                            <img src="image/dummy-img-600x400.jpg" alt="" class="img-fluid">
-                            <img src="image/dummy-img-600x400.jpg" alt="" class="img-fluid">
-                        </div>
-                    </div>
-                    <div class="col col-lg-8">
-                        <img src="image/dummy-img-900x600.jpg" alt="" class="img-fluid">
-                    </div>
+            <!-- {% for array in posts reversed %}
+                <div class="row row-cols-1 row-cols-lg-2 w-100">
+
+                    {%- assign even = forloop.index | modulo: 2 -%}
+                    {% for post in array reversed %}
+                        {% if even== 1 %}
+                            {% if forloop.index == 1 && %}
+                                {%- include projects/card-1.html post=post-%}
+                            {% else %}
+                                {%- include projects/card-2.html post=post-%}
+                            {% endif %}
+                        {% else %}
+                            {% if forloop.index == 1 && %}
+                                {%- include projects/card-2.html post=post-%}
+                            {% else %}
+                                {%- include projects/card-1.html post=post-%}
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
                 </div>
+            {% endfor %} -->
+                {% assign subfolder = page.url  %}
+
+                {% assign image_files = site.static_files 
+                | where: "image", true 
+                | intfilter : "basename"
+                | intsort: "basename" 
+                | where_exp: "item", "item.path contains subfolder" 
+                | chunk %}
+                {% for array in image_files %}
+                    <div class="row row-cols-1 row-cols-lg-2 w-100">
+                        {%- assign even = forloop.index | modulo: 2 -%}
+                        {% for image in array %}
+                            {% if even== 1 %}
+                                {% if forloop.index == 1 && %}
+                                    {%- include project/card-1.html image=image.path -%}
+                                {% else %}
+                                    {%- include project/card-2.html image=image.path -%}
+                                {% endif %}
+                            {% else %}
+                                {% if forloop.index == 1 && %}
+                                    {%- include project/card-2.html image=image.path-%}
+                                {% else %}
+                                    {%- include project/card-1.html image=image.path-%}
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}     
+                    </div>
+                {% endfor %} 
+
                 <div class="row row-cols-1 row-cols-lg-2">
                     <div class="col col-lg-7 p-lg-0">
                         <div class="d-flex flex-column">
                             <h5 class="mb-4">RESIDENTIAL DESIGN</h5>
                             <div class="font-1">
-                                <p class="text-gray">
-                                    Curabitur in malesuada erat. Pellentesque volutpat suscipit leo, et efficitur
-                                    ipsum
-                                    tincidunt eu. Maecenas egestas vehicula est a luctus. Mauris molestie mattis
-                                    iaculis. Etiam ultrices nisi id erat efficitur ultrices. Nullam sem orci,
-                                    posuere
-                                    vitae malesuada sed, convallis a est. Nam tempus ac nunc id volutpat. Maecenas
-                                    id
-                                    lacinia elit, a efficitur urna.
-                                </p>
-                                <ul class="text-gray" style="list-style: disc;">
-                                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                                    <li>Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</li>
-                                    <li>Fusce purus neque, maximus id pretium ac, feugiat sed lectus. Mauris eget
-                                        dui nulla. </li>
-                                </ul>
-                                <p class="text-gray">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus
-                                    nec ullamcorper mattis, pulvinar dapibus leo.
-                                </p>
+                                {{ page.content | markdownify }}
                             </div>
                         </div>
                     </div>
@@ -64,46 +84,53 @@ layout: default
                             <h5 class="mb-4">PROJECT INFO</h5>
                             <div class="font-1">
                                 <p class="text-gray">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus
-                                    nec ullamcorper mattis.
+                                    {{ page.info }}
                                 </p>
                             </div>
                             <div class="row row-cols-1 row-cols-lg-2 my-4">
                                 <div class="col mb-3">
+                                    {%- if page.client -%}
                                     <div class="d-flex flex-row align-item-center gap-3">
                                         <i class="fa-solid fa-user-group fs-1 accent-color"></i>
                                         <div>
                                             <h6 class="m-0">CLIENT</h6>
-                                            <span class="text-gray">Mahapuri</span>
+                                            <span class="text-gray">{{ page.client }}</span>
                                         </div>
                                     </div>
+                                    {%- endif -%}
                                 </div>
                                 <div class="col mb-3">
+                                    {%- if page.location -%}
                                     <div class="d-flex flex-row align-item-center gap-3">
                                         <i class="fa-solid fa-location-dot fs-1 accent-color"></i>
                                         <div>
                                             <h6 class="m-0">LOCATION</h6>
-                                            <span class="text-gray">Pekanbaru, Riau.</span>
+                                            <span class="text-gray">{{ page.location }}</span>
                                         </div>
                                     </div>
+                                    {%- endif -%}
                                 </div>
                                 <div class="col mb-3">
+                                    {%- if page.price -%}
                                     <div class="d-flex flex-row align-item-center gap-3">
                                         <i class="fa-solid fa-file-invoice-dollar fs-1 accent-color"></i>
                                         <div>
                                             <h6 class="m-0">PRICE VALUE</h6>
-                                            <span class="text-gray">$1500</span>
+                                            <span class="text-gray">{{ page.price }}</span>
                                         </div>
                                     </div>
+                                    {%- endif -%}
                                 </div>
                                 <div class="col mb-3">
+                                    {%- if page.designer -%}
                                     <div class="d-flex flex-row align-item-center gap-3">
                                         <i class="fa-solid fa-user-tie fs-1 accent-color"></i>
                                         <div>
                                             <h6 class="m-0">PROJECT HEAD</h6>
-                                            <span class="text-gray">Dyas Kardinal</span>
+                                            <span class="text-gray">{{ page.designer }}</span>
                                         </div>
                                     </div>
+                                    {%- endif -%}
                                 </div>
                             </div>
                         </div>

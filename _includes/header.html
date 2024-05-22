@@ -66,10 +66,10 @@
                                     {% t header.portfolio %}
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="project.html">{% t header.private_projects %}</a></li>
-                                    <li><a class="dropdown-item" href="project.html">{% t header.commercial_projects %}</a></li>
-                                    <li><a class="dropdown-item" href="project.html">{% t header.landscape_projects %}</a></li>
-                                    <!-- <li><a class="dropdown-item" href="project_detail.html">PROJECT DETAIL</a></li> -->
+                                    {% for category in site.categories %}
+                                    {% capture category_name %}{{ category | first }}{% endcapture %}
+                                        <li><a class="dropdown-item" href="{% link categories/{{ category_name }}.html %}">{{ site.translations[site.lang].categories[category_name] }}</a></li>
+                                    {% endfor %}
                                 </ul>
                             </li>
                             <li class="nav-item">

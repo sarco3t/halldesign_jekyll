@@ -35,12 +35,13 @@ header:
   services: SERVICES
   pricing: PRICING
   portfolio: PORTFOLIO
-  private_projects: PRIVATE PROJECTS
-  commercial_projects: COMMERCIAL PROJECTS
-  landscape_projects: LANDSCAPE & ARCHITECTURE
   contact_us: CONTACT
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus necullamcorper mattis, pulvinar dapibus leo."
   message_sent: Your Message Successfully Send.
+categories:
+  private: PRIVATE PROJECTS
+  commercial: COMMERCIAL PROJECTS
+  landscape: LANDSCAPE & ARCHITECTURE
 home:
   main:
     text_1: TRANSFORM SPACE
@@ -54,6 +55,19 @@ footer:
                             mattis."
 services:
   services: SERVICES
+  blocks:
+    block1:
+      title: INTERIOR DESIGN
+      description:  Fusce eleifend lorem et placerat eleifend.
+    block2: 
+      title: OFFICE REDESIGN
+      description:  Fusce eleifend lorem et placerat eleifend.
+    block3:
+      title: INTERIOR DECORATION
+      description:  Fusce eleifend lorem et placerat eleifend.
+    block4:
+      title: FURNITURE PRODUCTION
+      description: Fusce eleifend lorem et placerat eleifend.
   main:
     subtitle: REVEAL YOURSELF
     title: LET'S ADD SOMETHING SPECIAL IN YOUR SPACE
@@ -62,7 +76,7 @@ services:
     our_service: WE CREATE
     section_subtitle: WE DESIGN MODREN AND ELEGANT
     section_description: "Aenean erat ipsum, euismod auctor augue ac, hendrerit lacinia lorem. Ut nec leo id justo  luctus accumsan sed id dolor. Sed ac rhoncus diam, sit amet tempor ligula."
-    section_button: CONTACT_US
+    section_button: CONTACT US
   work_section:
     subtitle: HOW DO WE WORK ?
     title: WE DESIGN FOR YOUR SATISFACTION
@@ -113,3 +127,11 @@ video:
                         luctus accumsan sed id dolor. Sed ac rhoncus diam, sit amet tempor ligula. Cras maximus
                         magna quis vestibulum lobortis."
   button: READ MORE
+latest_projects:
+  subtitle: OUR PROJECT
+  title: OUR LATEST PROJECT
+  description: "Cras sagittis justo enim, eu sagittis purus molestie vitae. Vestibulum porttitor in massa
+                feugiat blandit. Nunc ac viverra magna. Etiam dictum pellentesque libero a porttitor. Vestibulum
+                dapibus, metus a molestie tincidunt, tortor nisl mollis mi, vitae commodo lorem mi auctor
+                tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus."
+  more_button: SEE MORE
