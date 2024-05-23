@@ -2,8 +2,8 @@
 title: Urban house
 layout: project
 categories: private
-header_image: /image/projects/private/1_urbanhouse/header.jpg
-background_image: /image/projects/private/1_urbanhouse/background.jpg
+header_image: /image/projects/private/urbanhouse/header.jpg
+background_image: /image/projects/private/urbanhouse/background.jpg
 permalink: /:categories/urbanhouse
 info: Хочемо вражати гостей столиці зручністю глобального громадянства і прагнемо розвивати кабельне телебачення, виготовлення ключів і пасажирські перевезення разом із рейтинговими агентствами.
 client: Клієнт
