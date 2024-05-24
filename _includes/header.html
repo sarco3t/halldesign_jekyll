@@ -26,8 +26,8 @@
         <div class="r-container">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    <a class="navbar-brand logo-container" href="index.html">
-                        <img src="image/logo.png" alt="" class="img-fluid">
+                    <a class="navbar-brand logo-container" href="{% link index.html %}">
+                        <img src="{{ '/image/logo.png' | prepend: site.url}}" alt="" class="img-fluid">
                     </a>
                     <button class="navbar-toggler accent-color" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -37,7 +37,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-3">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">{% t header.home %}</a>
+                                <a class="nav-link active" aria-current="page" href="{% link index.html %}">{% t header.home %}</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -45,9 +45,9 @@
                                     {% t header.about %}
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="about_us.html">{% t header.about %}</a></li>
-                                    <li><a class="dropdown-item" href="history.html">{% t header.history %}</a></li>
-                                    <li><a class="dropdown-item" href="team.html">{% t header.team %}</a></li>
+                                    <li><a class="dropdown-item" href="{% link about_us.html %}">{% t header.about %}</a></li>
+                                    <li><a class="dropdown-item" href="{% link history.html %}">{% t header.history %}</a></li>
+                                    <li><a class="dropdown-item" href="{% link team.html %}">{% t header.team %}</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
@@ -56,8 +56,8 @@
                                     {% t header.services %}
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="services.html">{% t header.services %}</a></li>
-                                    <li><a class="dropdown-item" href="pricing.html">{% t header.pricing %}</a></li>
+                                    <li><a class="dropdown-item" href="{% link services.html %}l">{% t header.services %}</a></li>
+                                    <li><a class="dropdown-item" href="{% link pricing.html %}">{% t header.pricing %}</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
@@ -73,7 +73,18 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html">{% t header.contact_us %}</a>
+                                <a class="nav-link" href="{% link contact.html %}">{% t header.contact_us %}</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    {{ site.lang }}
+                                </a>
+                                <ul class="dropdown-menu">
+                                    {%- for lang in site.languages -%}
+                                        <li><a class="dropdown-item text-uppercase" href="/{{ lang }}">{{ lang }}</a></li>
+                                    {%- endfor -%}
+                                </ul>
                             </li>
                         </ul>
                     </div>

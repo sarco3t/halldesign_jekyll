@@ -7,9 +7,7 @@ langs:
   it: Italiano
   en: English
   es: Español
-pages:
-  example: example
-  includeexample: The following text is a Jekyll include liquid tag parameter
+
 titles:
   pagination: Pagination
 contact_us:
@@ -28,7 +26,7 @@ contact_us:
 header:
   opening: Mon - Fri 10:00 - 18:00
   home: HOME
-  about: ABOUT
+  about: ABOUT US
   about_us: ABOUT US
   history: HISTORY
   team: OUR TEAM
@@ -42,6 +40,10 @@ categories:
   private: PRIVATE PROJECTS
   commercial: COMMERCIAL PROJECTS
   landscape: LANDSCAPE & ARCHITECTURE
+  descriptions:
+      private: PRIVATE PROJECTS desc
+      commercial: COMMERCIAL PROJECTS desc
+      landscape: LANDSCAPE & ARCHITECTURE desc
 home:
   main:
     text_1: TRANSFORM SPACE

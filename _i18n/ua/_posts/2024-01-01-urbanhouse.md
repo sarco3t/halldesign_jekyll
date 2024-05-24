@@ -6,7 +6,7 @@ header_image: /image/projects/private/urbanhouse/header.jpg
 background_image: /image/projects/private/urbanhouse/background.jpg
 permalink: /:categories/urbanhouse
 info: Хочемо вражати гостей столиці зручністю глобального громадянства і прагнемо розвивати кабельне телебачення, виготовлення ключів і пасажирські перевезення разом із рейтинговими агентствами.
-client: Клієнт
+square: 70m2
 location: Локація
 price: 500$
 designer: Дизайнер

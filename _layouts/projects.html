@@ -9,7 +9,7 @@ layout: default
                 <h2 class="text-white">PROJECT</h2>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb fw-bold">
-                        <li class="breadcrumb-item"><a href="index.html">HOME</a></li>
+                        <li class="breadcrumb-item"><a href="{% link index.html %}">HOME</a></li>
                         <li class="breadcrumb-item active" aria-current="page">PROJECT</li>
                     </ol>
                 </nav>
@@ -20,13 +20,9 @@ layout: default
     <section class="section">
         <div class="r-container">
             <div class="d-flex flex-column align-items-center text-center gap-3">
-                <h5 class="accent-color font-1 fw-semibold">OUR PROJECT</h5>
-                <h4 class="text-black font-2 fw-semibold">OUR LATEST PROJECT</h4>
+                <h4 class="text-black font-2 fw-semibold ">{{ site.translations[site.lang].categories[page.category] }}</h4>
                 <p class="text-gray font-1">
-                    Cras sagittis justo enim, eu sagittis purus molestie vitae. Vestibulum porttitor in massa
-                    feugiat blandit. Nunc ac viverra magna. Etiam dictum pellentesque libero a porttitor. Vestibulum
-                    dapibus, metus a molestie tincidunt, tortor nisl mollis mi, vitae commodo lorem mi auctor
-                    tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                    {{ site.translations[site.lang].categories.descriptions[page.category] }}
                 </p>
                 {%- assign posts =site.categories[page.category] | chunk 2 -%}
                 {% for array in posts reversed %}
