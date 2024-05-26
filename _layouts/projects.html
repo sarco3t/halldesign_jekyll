@@ -25,11 +25,11 @@ layout: default
                     {{ site.translations[site.lang].categories.descriptions[page.category] }}
                 </p>
                 {%- assign posts =site.categories[page.category] | chunk 2 -%}
-                {% for array in posts reversed %}
+                {% for array in posts %}
                     <div class="row row-cols-1 row-cols-lg-2 w-100">
 
                         {%- assign even = forloop.index | modulo: 2 -%}
-                        {% for post in array reversed %}
+                        {% for post in array %}
                             {% if even== 1 %}
                                 {% if forloop.index == 1 && %}
                                     {%- include projects/card-1.html post=post -%}

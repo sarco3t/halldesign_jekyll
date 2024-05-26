@@ -1,0 +1,8 @@
+---
+title: Aristokrat Barbershop
+layout: project
+categories: commercial
+header_image: /image/projects/commercial/barbershop/header.jpg
+background_image: /image/projects/commercial/barbershop/5_barbershop.jpg
+permalink: /:categories/:title
+---
