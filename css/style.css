@@ -813,7 +813,6 @@ a {
 .pricing-container.exclusive{
     background-color: var(--dark-color);
     color: white !important;
-    margin-top: -3rem;
 }
 
 .pricing-container.exclusive .pricing-tag {

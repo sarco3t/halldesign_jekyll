@@ -1,4 +1,5 @@
 ---
+permalink: /pricing
 ---
 <main>
     <section class="section position-relative" style="background-image: url(image/dummy-img-1920x900.jpg);">
@@ -37,63 +38,18 @@
             </div>
             <div class="pricing-wrapper">
                 <div class="row row-cols-1 row-cols-lg-3">
-                    <div class="col mb-3">
-                        <div class="pricing-container shadow gap-3">
-                            <div class="pricing-tag"></div>
-                            <h6 class="accent-color font-2 fw-bold">DESIGN ADVICES</h6>
-                            <p class="text-gray">Donec rutrum felis est, at sollicitudin dui auctor vel</p>
-                            <div class="pricing-price font-1">
-                                <span class="fs-3">$</span>
-                                <h3>800</h3>
-                            </div>
-                            <div class="d-flex flex-column gap-3 mb-4" style="font-size: 14px;">
-                                <span class="text-body-secondary font-2 fw-bold">GENERAL LIVING SPACE ADVICES</span>
-                                <span class="text-body-secondary font-2 fw-bold">RENNOVATION ADVICES</span>
-                                <span class="text-body-secondary font-2 fw-bold">INTERIOR DESIGN ADVICES</span>
-                                <span class="text-body-secondary font-2 fw-bold">FURNITURE REORGANIZATION</span>
-                            </div>
-                            <a href="" type="button" class="btn bg-dark-color bg-accent-color-hover text-white fw-bold font-1 rounded-0">READ MORE</a>
-                        </div>
-                    </div>
-                    <div class="col mb-3">
-                        <div class="pricing-container shadow gap-3">
-                            <div class="pricing-tag"></div>
-                            <h6 class="accent-color font-2 fw-bold">FURNITURE DESIGN</h6>
-                            <p class="text-gray">Donec rutrum felis est, at sollicitudin dui auctor vel</p>
-                            <div class="pricing-price font-1">
-                                <span class="fs-3">$</span>
-                                <h3>900</h3>
-                            </div>
-                            <div class="d-flex flex-column gap-3 mb-4" style="font-size: 14px;">
-                                <span class="text-body-secondary font-2 fw-bold">FURNITURE FOR LIVING ROOM</span>
-                                <span class="text-body-secondary font-2 fw-bold">FURNITURE REFURBISHMENT</span>
-                                <span class="text-body-secondary font-2 fw-bold">SOFAS AND AMCHAIRS</span>
-                                <span class="text-body-secondary font-2 fw-bold">TABLES AND CHAIRS</span>
-                            </div>
-                            <a href="" type="button" class="btn bg-dark-color bg-accent-color-hover text-white fw-bold font-1 rounded-0">READ MORE</a>
-                        </div>
-                    </div>
-                    <div class="col mb-3">
-                        <div class="pricing-container exclusive shadow gap-3">
-                            <div class="pricing-tag"></div>
-                            <h6 class="accent-color font-2 fw-bold">FURNITURE DESIGN</h6>
-                            <p class="text-gray">Donec rutrum felis est, at sollicitudin dui auctor vel</p>
-                            <div class="pricing-price font-1">
-                                <span class="fs-3">$</span>
-                                <h3>900</h3>
-                            </div>
-                            <div class="d-flex flex-column gap-3 mb-4" style="font-size: 14px;">
-                                <span class="text-white font-2 fw-bold">GENERAL LIVING SPACE ADVICES</span>
-                                <span class="text-white font-2 fw-bold">RENNOVATION ADVICES</span>
-                                <span class="text-white font-2 fw-bold">INTERIOR DESIGN ADVICES</span>
-                                <span class="text-white font-2 fw-bold">FURNITURE REORGANIZATION</span>
-                                <span class="text-white font-2 fw-bold">LARGE PROJECT INCLUDED</span>
-                                <span class="text-white font-2 fw-bold">COMPLETE HOME REDESIGN</span>
-                                <span class="text-white font-2 fw-bold">INTERIOR AND EXTERIOR WORKS</span>
-                            </div>
-                            <a href="" type="button" class="btn btn-accent-light fw-bold font-1 rounded-0">READ MORE</a>
-                        </div>
-                    </div>
+                    {%- for item in site.translations[site.lang].prices.top -%}
+                        {%- include pricing/regular_card.html title=item.title details=item.details currency=item.currency price=item.price description=item.description-%}
+                    {%- endfor -%}
+                </div>
+                <div class="row row-cols-1 row-cols-lg-3">
+                    {%- for item in site.translations[site.lang].prices.bottom -%}
+                        {%- if item.exclusive -%}
+                            {%- include pricing/exclusive_card.html title=item.title details=item.details currency=item.currency price=item.price description=item.description-%}
+                        {%- else -%}
+                            {%- include pricing/regular_card.html title=item.title details=item.details currency=item.currency price=item.price description=item.description-%}
+                        {%- endif -%}
+                    {%- endfor -%}
                 </div>
             </div>
         </div>
