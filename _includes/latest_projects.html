@@ -1,73 +1,45 @@
 <section class="section">
     <div class="r-container">
         <div class="d-flex flex-column gap-3">
-            <h5 class="accent-color font-1 fw-semibold">{% t latest_projects.subtitle %}</h5>
             <h3 class="text-black font-2 fw-semibold">{% t latest_projects.title %}</h3>
             <p class="text-gray font-1">
                 {% t latest_projects.description %}
             </p>
+            {% assign post = site.posts.first %}
             <div class="row row-cols-1 row-cols-lg-2">
                 <div class="col mb-3">
-                    <div class="overlay-card" style="background-image: url(image/dummy-img-600x700.jpg);">
+                    <div class="overlay-card" style="background-image:url({{ post.header_image | prepend: site.url }});">
                         <div class="overlay-body gap-3">
-                            <a href="image/dummy-img-600x700.jpg" data-fslightbox="gallery-2" type="button"
+                            <a href="{{ post.header_image | prepend: site.url }}" data-fslightbox="gallery-2" type="button"
                                 class="btn-outline-circle p-0">
                                 <i class="fa-solid fa-plus"></i>
                             </a>
-                            <h5 class="text-white fw-semibold font-2">RESIDENTIAL DESIGN</h5>
+                            <h5 class="text-white fw-semibold font-2">{{ post.title }}</h5>
                             <div>
-                                <a href=" " type="button" class="btn rounded-0 btn-accent-light fw-bold font-2">{% t latest_projects.more_button %}</a>
+                                <a href="{{ post.url  | prepend: site.url }}" type="button" class="btn rounded-0 btn-accent-light fw-bold font-2">{% t latest_projects.more_button %}</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col mb-3">
                     <div class="d-flex gap-3 flex-lg-row flex-column">
+                    {% for item in site.posts offset:1 limit :3 %}
                         <div class="accordion-image">
-                            <div class="overlay-card" style="background-image: url(image/dummy-img-600x700.jpg);">
+                            <div class="overlay-card" style="background-image:url({{ item.header_image | prepend: site.url }});">
                                 <div class="overlay-body gap-3">
-                                    <a href="image/dummy-img-600x700.jpg" data-fslightbox="gallery-2" type="button"
+                                    <a href="{{ item.header_image | prepend: site.url }}" data-fslightbox="gallery-2" type="button"
                                         class="btn-outline-circle p-0">
                                         <i class="fa-solid fa-plus"></i>
                                     </a>
-                                    <h5 class="text-white fw-semibold font-2">CORPORATE DESIGN</h5>
+                                    <h5 class="text-white fw-semibold font-2">{{ item.title }} </h5>
                                     <div>
-                                        <a href=" " type="button"
+                                         <a href="{{ item.url  | prepend: site.url }}" type="button"
                                             class="btn rounded-0 btn-accent-light fw-bold font-2">{% t latest_projects.more_button %}</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-image">
-                            <div class="overlay-card" style="background-image: url(image/dummy-img-600x700.jpg);">
-                                <div class="overlay-body gap-3">
-                                    <a href="image/dummy-img-600x700.jpg" data-fslightbox="gallery-2" type="button"
-                                        class="btn-outline-circle p-0">
-                                        <i class="fa-solid fa-plus"></i>
-                                    </a>
-                                    <h5 class="text-white fw-semibold font-2">RESTAURANT DESIGN</h5>
-                                    <div>
-                                        <a href=" " type="button"
-                                            class="btn rounded-0 btn-accent-light fw-bold font-2">{% t latest_projects.more_button %}</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-image">
-                            <div class="overlay-card" style="background-image: url(image/dummy-img-600x700.jpg);">
-                                <div class="overlay-body gap-3">
-                                    <a href="image/dummy-img-600x700.jpg" data-fslightbox="gallery-2" type="button"
-                                        class="btn-outline-circle p-0">
-                                        <i class="fa-solid fa-plus"></i>
-                                    </a>
-                                    <h5 class="text-white fw-semibold font-2">COMMERCIAL DESIGN</h5>
-                                    <div>
-                                        <a href=" " type="button"
-                                            class="btn rounded-0 btn-accent-light fw-bold font-2">{% t latest_projects.more_button %}</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    {% endfor %}
                     </div>
                 </div>
             </div>

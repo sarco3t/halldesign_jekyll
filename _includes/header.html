@@ -75,15 +75,24 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="{% link contact.html %}">{% t header.contact_us %}</a>
                             </li>
-                            <li class="nav-item dropdown">
+                            <li class="nav-item dropdown d-flex flex-row align-items-center">
+                                <i class="fa fa-globe accent-color " aria-hidden="true"></i>
                                 <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     {{ site.lang }}
                                 </a>
                                 <ul class="dropdown-menu">
-                                    {%- for lang in site.languages -%}
-                                        <li><a class="dropdown-item text-uppercase" href="/{{ lang }}">{{ lang }}</a></li>
-                                    {%- endfor -%}
+                                    {% for lang in site.languages %}
+                                        {% if lang == site.default_lang %}
+                                        <li>
+                                            <a  class="dropdown-item text-uppercase" href=" {{ page.url }}">{{ lang }}</a>
+                                        </li>
+                                        {% else %}
+                                        <li>
+                                            <a  class="dropdown-item text-uppercase" href="/{{ lang }}{{ page.url }}">{{ lang }}</a>
+                                        </li>
+                                        {% endif %}
+                                    {% endfor %}
                                 </ul>
                             </li>
                         </ul>

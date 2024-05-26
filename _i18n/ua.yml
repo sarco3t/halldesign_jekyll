@@ -221,3 +221,7 @@ prices:
         - розрахунок вартості від партнерів
       price: 3000/Ар
       currency: ₴
+pricing:
+  subtitle: IMPROVING YOUR LIFE(У)
+  title: "GREAT OFFER <br> FOR YOU(У)"
+  description: "Integer eleifend at tortor et finibus. Pellentesque nec nisi arcu. Ut ante ex, pulvinar eget purus nec, varius rutrum erat. Aliquam elementum non sapien pretium faucibus. In convallis maximus turpis.(У)"
