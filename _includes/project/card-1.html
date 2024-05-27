@@ -1,10 +1,15 @@
 <div class="col col-lg-4 mb-3">
     <div class="overlay-card" style="background-image:url({{ include.image  }});">
         <div class="overlay-body gap-3">
-            <a href="{{ include.image }}" data-fslightbox="gallery-2" type="button"
-                class="btn-outline-circle p-0">
-                <i class="fa-solid fa-eye"></i>
-            </a>
+            
+            {% if include.disable_overlay  %}
+            
+            {% else %}
+                <a href="{{ include.image }}" data-fslightbox="gallery-2" type="button"
+                    class="btn-outline-circle p-0">
+                    <i class="fa-solid fa-eye"></i>
+                </a>
+            {% endif %}
             {% if include.title %}
                 <h5 class="text-white fw-semibold font-2">{{ include.title }}</h5>
             {% endif %}
