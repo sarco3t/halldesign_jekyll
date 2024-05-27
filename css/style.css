@@ -787,7 +787,6 @@ a {
     display: flex;
     flex-direction: column;
     position: relative;
-    text-align: center;
     justify-content: center;
     align-items: center;
     padding: 1.75rem;
@@ -798,7 +797,7 @@ a {
     background-color: var(--dark-color);
     right: 0;
     height: 5rem;
-    width: 85%;
+    width: 100%;
     top: 8.7rem;
 }
 

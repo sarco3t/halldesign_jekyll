@@ -1,7 +1,7 @@
 <div class="col col-lg-4 mb-3">
-    <div class="overlay-card" style="background-image:url({{ include.image | prepend: site.url }});">
+    <div class="overlay-card" style="background-image:url({{ include.image  }});">
         <div class="overlay-body gap-3">
-            <a href="{{ include.image | prepend: site.url }}" data-fslightbox="gallery-2" type="button"
+            <a href="{{ include.image }}" data-fslightbox="gallery-2" type="button"
                 class="btn-outline-circle p-0">
                 <i class="fa-solid fa-eye"></i>
             </a>
@@ -10,7 +10,7 @@
             {% endif %}
             {% if include.url %}
                 <div>
-                    <a href=" {{ include.url  | prepend: site.url }}" type="button" class="btn rounded-0 btn-accent-light fw-bold font-2">{% t latest_projects.more_button %}</a>
+                    <a href=" {{ include.url   }}" type="button" class="btn rounded-0 btn-accent-light fw-bold font-2">{% t latest_projects.more_button %}</a>
                 </div>
             {% endif %}
 

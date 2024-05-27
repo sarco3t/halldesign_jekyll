@@ -2,15 +2,15 @@
 layout: default
 ---
 <main>
-    <section class="section position-relative" style="background-image: url({{ page.header_image | prepend: site.url }});">
+    <section class="section position-relative" style="background-image: url({{ page.header_image }});">
         <div class="r-container">
             <div class="image-overlay"></div>
             <div class="d-flex flex-column position-relative py-5" style="z-index: 2;">
-                <h2 class="text-white">PROJECT</h2>
+                <h2 class="text-white">{{ site.translations[site.lang].categories[page.category] }}</h2>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb fw-bold">
-                        <li class="breadcrumb-item"><a href="{% link index.html %}">HOME</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">PROJECT</li>
+                        <li class="breadcrumb-item"><a href="{% link index.html %}">{% t header.home %}</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">{{ site.translations[site.lang].categories[page.category] }}</li>
                     </ol>
                 </nav>
             </div>
@@ -31,13 +31,13 @@ layout: default
                         {%- assign even = forloop.index | modulo: 2 -%}
                         {% for post in array %}
                             {% if even== 1 %}
-                                {% if forloop.index == 1 && %}
+                                {% if forloop.index == 1  %}
                                     {%- include projects/card-1.html post=post -%}
                                 {% else %}
                                     {%- include projects/card-2.html post=post -%}
                                 {% endif %}
                             {% else %}
-                                {% if forloop.index == 1 && %}
+                                {% if forloop.index == 1  %}
                                     {%- include projects/card-2.html post=post-%}
                                 {% else %}
                                     {%- include projects/card-1.html post=post-%}

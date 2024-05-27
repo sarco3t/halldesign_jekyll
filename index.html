@@ -1,10 +1,11 @@
 ---
 permalink: /
+title: Home
 ---
 <main>
     <section class="section image-infinite-bg position-relative"
         style="background-size: cover; background-position: center ;padding: 15em 1em 15em 1em;"
-        data-images='["/image/dummy-img-1920x900.jpg", "/image/dummy-img-1920x900.jpg"]'>
+        data-images='["/image/main.jpg", "/image/projects/private/header.jpg", "/image/main-2.jpg"]'>
         <div class="r-container h-100">
             <div class="image-overlay"></div>
             <div class="d-flex flex-column justify-content-center align-items-center text-center gap-3 h-100 position-relative"
@@ -22,10 +23,8 @@ permalink: /
     </section>
 
     {%- include latest_projects.html -%}
-    {%- include welcome.html -%}
     {%- include home/video.html -%}
     {%- include home/statistic.html -%}
-    {%- include our_service.html -%}
 
     {%- include home/contact_now.html -%}
 

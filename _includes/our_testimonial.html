@@ -15,76 +15,35 @@
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
-                                <div class="swiper-slide">
-                                    <div class="bg-white p-5">
-                                        <div class="row">
-                                            <div class="col mb-3">
-                                                <div class="d-flex flex-column justify-content-center h-100">
-                                                    <p class="text-gray font-2">
-                                                        " Curabitur a orci vel diam interdum hendrerit commodo
-                                                        in mi "
-                                                    </p>
-                                                    <div class="divider mb-4"></div>
-                                                    <div class="d-flex flex-column">
-                                                        <h5 class="lh-1 m-0">TYAS WIDAGDO</h5>
-                                                        <span class="text-gray">Desination</span>
+                                {% assign size = site.feedbacks | size %}
+                                {% assign half_size = size | divided_by: 2 | ceil | %}
+                                {% for feedback in site.feedbacks limit: half_size %}
+                                    <div class="swiper-slide">
+                                        <div class="bg-white p-5">
+                                            <div class="row">
+                                                <div class="col mb-3">
+                                                    <div class="d-flex flex-column justify-content-center h-100">
+                                                        <p class="text-gray font-2">
+                                                            {{ feedback.content | | markdownify  }}
+                                                        </p>
+                                                        <div class="divider mb-4"></div>
+                                                        <div class="d-flex flex-column">
+                                                            <h5 class="lh-1 m-0">{{ feedback.name }}</h5>
+                                                            <span class="text-gray">{{ feedback.description }}</span>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col mb-3">
-                                                <img src="image/dummy-img-400x400.jpg" alt="" class="img-fluid">
+                                                <div class="col mb-3">
+                                                    <img src="{{ feedback.image }}" alt="" class="img-fluid">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="bg-white p-5">
-                                        <div class="row">
-                                            <div class="col mb-3">
-                                                <div class="d-flex flex-column justify-content-center h-100">
-                                                    <p class="text-gray font-2">
-                                                        " Curabitur a orci vel diam interdum hendrerit commodo
-                                                        in mi "
-                                                    </p>
-                                                    <div class="divider mb-4"></div>
-                                                    <div class="d-flex flex-column">
-                                                        <h5 class="lh-1 m-0">ELSA VERINA</h5>
-                                                        <span class="text-gray">Desination</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col mb-3">
-                                                <img src="image/dummy-img-400x400.jpg" alt="" class="img-fluid">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="bg-white p-5">
-                                        <div class="row">
-                                            <div class="col mb-3">
-                                                <div class="d-flex flex-column justify-content-center h-100">
-                                                    <p class="text-gray font-2">
-                                                        " Curabitur a orci vel diam interdum hendrerit commodo
-                                                        in mi "
-                                                    </p>
-                                                    <div class="divider mb-4"></div>
-                                                    <div class="d-flex flex-column">
-                                                        <h5 class="lh-1 m-0">WIDHI YUGO</h5>
-                                                        <span class="text-gray">Desination</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col mb-3">
-                                                <img src="image/dummy-img-400x400.jpg" alt="" class="img-fluid">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                ...
+                                {% endfor %}
+
                             </div>
                             <!-- If we need pagination -->
-                            <div class="swiper-pagination"></div>
+                            <!-- <div class="swiper-pagination"></div> -->
                         </div>
                     </div>
                 </div>
@@ -97,76 +56,34 @@
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
-                                <div class="swiper-slide">
-                                    <div class="bg-white p-5">
-                                        <div class="row">
-                                            <div class="col mb-3">
-                                                <div class="d-flex flex-column justify-content-center h-100">
-                                                    <p class="text-gray font-2">
-                                                        " Curabitur a orci vel diam interdum hendrerit commodo
-                                                        in mi "
-                                                    </p>
-                                                    <div class="divider mb-4"></div>
-                                                    <div class="d-flex flex-column">
-                                                        <h5 class="lh-1 m-0">KEAN BERLIN</h5>
-                                                        <span class="text-gray">Desination</span>
+
+                                {% for feedback in site.feedbacks offset: half_size %}
+                                    <div class="swiper-slide">
+                                        <div class="bg-white p-5">
+                                            <div class="row">
+                                                <div class="col mb-3">
+                                                    <div class="d-flex flex-column justify-content-center h-100">
+                                                        <p class="text-gray font-2">
+                                                            {{ feedback.content | | markdownify  }}
+                                                        </p>
+                                                        <div class="divider mb-4"></div>
+                                                        <div class="d-flex flex-column">
+                                                            <h5 class="lh-1 m-0">{{ feedback.name }}</h5>
+                                                            <span class="text-gray">{{ feedback.description }}</span>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col mb-3">
-                                                <img src="image/dummy-img-400x400.jpg" alt="" class="img-fluid">
+                                                <div class="col mb-3">
+                                                    <img src="{{ feedback.image }}" alt="" class="img-fluid">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="bg-white p-5">
-                                        <div class="row">
-                                            <div class="col mb-3">
-                                                <div class="d-flex flex-column justify-content-center h-100">
-                                                    <p class="text-gray font-2">
-                                                        " Curabitur a orci vel diam interdum hendrerit commodo
-                                                        in mi "
-                                                    </p>
-                                                    <div class="divider mb-4"></div>
-                                                    <div class="d-flex flex-column">
-                                                        <h5 class="lh-1 m-0">ELSA VERINA</h5>
-                                                        <span class="text-gray">Desination</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col mb-3">
-                                                <img src="image/dummy-img-400x400.jpg" alt="" class="img-fluid">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="bg-white p-5">
-                                        <div class="row">
-                                            <div class="col mb-3">
-                                                <div class="d-flex flex-column justify-content-center h-100">
-                                                    <p class="text-gray font-2">
-                                                        " Curabitur a orci vel diam interdum hendrerit commodo
-                                                        in mi "
-                                                    </p>
-                                                    <div class="divider mb-4"></div>
-                                                    <div class="d-flex flex-column">
-                                                        <h5 class="lh-1 m-0">WIDHI YUGO</h5>
-                                                        <span class="text-gray">Desination</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col mb-3">
-                                                <img src="image/dummy-img-400x400.jpg" alt="" class="img-fluid">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                ...
+                                {% endfor %}
+                                
                             </div>
                             <!-- If we need pagination -->
-                            <div class="swiper-pagination"></div>
+                            <!-- <div class="swiper-pagination"></div> -->
                         </div>
                     </div>
                     <div class="d-flex flex-column gap-3">
@@ -177,18 +94,11 @@
                                 <!-- Additional required wrapper -->
                                 <div class="swiper-wrapper">
                                     <!-- Slides -->
-                                    <div class="swiper-slide"><img src="image/logo-ipsum-1.png" alt=""
-                                            class="img-fluid"></div>
-                                    <div class="swiper-slide"><img src="image/logo-ipsum-2.png" alt=""
-                                            class="img-fluid"></div>
-                                    <div class="swiper-slide"><img src="image/logo-ipsum-3.png" alt=""
-                                            class="img-fluid"></div>
-                                    <div class="swiper-slide"><img src="image/logo-ipsum-4.png" alt=""
-                                            class="img-fluid"></div>
-                                    <div class="swiper-slide"><img src="image/logo-ipsum-5.png" alt=""
-                                            class="img-fluid"></div>
-                                    <div class="swiper-slide"><img src="image/logo-ipsum-6.png" alt=""
-                                            class="img-fluid"></div>
+                                    {% assign image_files = site.static_files | where: "partners", true %}
+                                    {% for image in image_files %}
+                                      <div class="swiper-slide"><img src="{{ image.path }}" alt="{{ image.name }}"class="img-fluid"></div>
+                                    {% endfor %}
+
                                 </div>
                             </div>
                         </div>

@@ -8,13 +8,14 @@ langs:
   en: English
   es: Español
 
+contact_now: ЗВʼЯЗАТИСЯ
 titles:
   pagination: Pagination
 contact_us:
   contact_us: КОНТАКТИ
   have_a_question: "Зв'язатися з нами:"
   address: м. Хмельницький, IQ-Center
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus necullamcorper mattis, pulvinar dapibus leo.(У)"
+  description: "Ви можете зателефонувати нам у робочий час, або заповнити форму і ми зв'яжемось з вами впродовж 5-10 хвилин. Також ми є в усіх месенджерах, так що просто оберіть зручний."
   message_sent: Your Message Successfully Send.
   form:
     name: Ім'я
@@ -40,9 +41,9 @@ categories:
   commercial: КОМЕРЦІЙНІ ПРОЕКТИ
   landscape: ЛАНДШАФТ & АРХІТЕКТУРА
   descriptions:
-      private: PRIVATE PROJECTS desc
-      commercial: COMMERCIAL PROJECTS desc
-      landscape: LANDSCAPE & ARCHITECTURE desc
+      private: "Інтерʼєр - це відображення вашого світу, ваших звичок, ритму життя. Ми ставимо акцент саме на вашому стилі життя, проєктуючи простір, в якому буде існувати ваша сімʼя. Ваші ідеальні суботні ранки на сонячній кухні чи затишні зимові вечори - будуть продумані до дрібничок, щоб стати вашим найтеплішим спогадом."
+      commercial: "Дозвольте вашому бізнесу продавати замість вас. Ми створюємо такі інтерʼєри, які стають візитівкою, що неможливо забути. А це, в свою чергу дозволяє клієнту проводити пряму асоціацію продукту чи послуги саме з вашим брендом."
+      landscape: "Створення навколишнього простору через призму ергономіки інтерʼєру. Це наш особливий підхід - робити надзвичайно зручні будівлі."
 home:
   main:
     text_1: ПЕРЕТВОРЮЄМО ПРОСТІР
@@ -56,10 +57,8 @@ project:
   designer: дизайнер
   project_info: Про проект
 footer:
-  text: "Nunc a purus sit amet nulla porttitor auctor vitae eu purus. Suspendisse non
-                          bibendum lectus. Mauris ut dignissim arcu, vel euismod mi. Pellentesque ut velit
-                          dictum, dignissim dui non, pulvinar lectus. Etiam non mi vestibulum, aliquam lacus
-                          mattis.(У)"
+  text: "Інтерʼєр - це мистецтво комфортного простору, це те, що розказує вашу історію, щасливу, турботливу, яскраву чи навпаки дуже спокійну.<br/>
+В процессі  створення вашого ідельного простору, завжди з любовʼю, ваша команда Hall Design"
 services:
   services: ПОСЛУГИ
   blocks:
@@ -83,7 +82,7 @@ services:
     our_service: МИ РОЗРОБЛЯЄМО
     section_subtitle: WE DESIGN MODREN AND ELEGANT
     section_description: "Aenean erat ipsum, euismod auctor augue ac, hendrerit lacinia lorem. Ut nec leo id justo  luctus accumsan sed id dolor. Sed ac rhoncus diam, sit amet tempor ligula."
-    section_button: CONTACT US(У)
+    section_button: ЗВʼЯЗАТИСЯ
   work_section:
     subtitle: ЯК ВІДБУВАЄТЬСЯ РОБОТА?
     title: ЕТАПИ РОЗРОБКИ ДИЗАЙН ПРОЕКТУ
@@ -101,11 +100,11 @@ services:
       title: РОЗРОБКА КРЕСЛЕНЬ ТА СПЕЦИФІКАЦІЙ
       description: Усі креслення для будівельних робіт, креслення меблів "під замовлення", креслення складних вузлів, підбір матеріалів, меблів, освітлення, сантехніки та декору з посиланнями на магазини.
 our_testimonial:
-  partners: OUR PARTNER(У)
-  partners_text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.(У)"
-  subtitle: OUR TESTIMONIAL(У)
-  title: WHAT OUR CLIENT SAY ?(У)
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus necullamcorper mattis, pulvinar dapibus leo.(У)"
+  partners: НАШІ КЛІЄНТИ
+  partners_text: "Будемо раді бачити вас серед своїх клієнтів"
+  subtitle: ВІДГУКИ
+  title: ЩО ПРО НАС ГОВОРЯТЬ
+  description: "Найкращий відгук за нашу роботу — це щира усмішка клієнта, а ми в свою чергу щиро радіємо за кожне ваше звершення."
 welcome:
   subtitle: WELCOME TO HOUSEDECO(У)
   title: INTERIOR DESIGN(У)
@@ -118,14 +117,13 @@ welcome:
       title: CREATIVE(У)
       description: "Nulla in eros sit amet sapien viverra pretium. Ut luctus libero ipsum, eget varius nibh dapibus vitae. Sed non enim felis. Quisque eget tincidunt ligula. Quisque odio odio.(У)"
 team:
-  title: OUR TEAM(У)
+  title: Наша команда
   section:
-    subtitle: MEET OUR DESIGNER(У)
-    title: OUR PROFESSIONAL(У)
-    description: "Cras sagittis justo enim, eu sagittis purus molestie vitae. Vestibulum porttitor in massa feugiat blandit. Nunc ac viverra magna. Etiam dictum pellentesque libero a porttitor. Vestibulum dapibus, metus a molestie tincidunt, tortor nisl mollis mi, vitae commodo lorem mi auctor tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus.(У)"
+    title: Ваші дизайнери
+    description: "Hall Design - це особлива творча  сімʼя, де кожен з нас має свої сильні сторони, стилістику і темпи роботи. Тому нам вдається так класно поєднувати роботу у різних напрямах. Ми класно працюємо з офісами, кавʼярнями, салонами краси, лікарнями. Та звісно житловими приміщеннями. Тому ми впевнені - що точно зможемо втілити вашу мрію в реальність!"
 cta:
-  title: NEED TO REDESIGN YOUR LIVING SPACE ? HIRE US NOW(У)
-  button: CONTACT US(У)
+  title: ЗАЛИШИЛИСЯ ПИТАННЯ? ЗВʼЯЖІТЬСЯ З НАМИ
+  button: ЗВʼЯЗАТИСЯ
 video:
   main_title: WATCH VIDEO(У)
   main_title:  WE GAVE THE BEST(У)
@@ -133,29 +131,26 @@ video:
   description: "Aenean erat ipsum, euismod auctor augue ac, hendrerit lacinia lorem. Ut nec leo id justo
                         luctus accumsan sed id dolor. Sed ac rhoncus diam, sit amet tempor ligula. Cras maximus
                         magna quis vestibulum lobortis.(У)"
-  button: READ MORE(У)
+  button: ДИВИТИСЯ БІЛЬШЕ
 latest_projects:
   subtitle: OUR PROJECT(У)
-  title: OUR LATEST PROJECT(У)
-  description: "Cras sagittis justo enim, eu sagittis purus molestie vitae. Vestibulum porttitor in massa
-                feugiat blandit. Nunc ac viverra magna. Etiam dictum pellentesque libero a porttitor. Vestibulum
-                dapibus, metus a molestie tincidunt, tortor nisl mollis mi, vitae commodo lorem mi auctor
-                tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus.(У)"
-  more_button: SEE MORE(У)
+  title: ОСТАННІ ПРОЕКТИ
+  description: "Інтерʼєр - це відображення вашого світу, ваших звичок, ритму життя. Ми ставимо акцент саме на вашому стилі життя, проєктуючи простір, в якому буде існувати ваша сімʼя. Ваші ідеальні суботні ранки на сонячній кухні чи затишні зимові вечори - будуть продумані до дрібничок, щоб стати вашим найтеплішим спогадом."
+  more_button: ДИВИТИСЯ БІЛЬШЕ
 prices:
   top:
     - title: ТЕХНІЧНИЙ ДИЗАЙН-ПРОЕКТ 
-      description: "ТЕРМІНИ: 2 ТИЖНІ/50м2"
+      description: "ТЕРМІНИ: 2 ТИЖНІ/50м²"
       details:
         - виїзд на обʼєкт
         - складання обмірного плану
         - розробка варіантів розташування меблів
         - план розведення електрики (розетки, перемикачі, освітлення)
         - план розташування сантехніки
-      price: 250/m2
+      price: 250/м²
       currency: ₴
-    - title: КОНЦЕПТУАЛЬНИЙ ДИЗАЙН-ПРОЕКТ  
-      description: "ТЕРМІНИ: 1 МІСЯЦЬ/50м2"
+    - title: ВІЗУАЛЬНИЙ ДИЗАЙН-ПРОЕКТ  
+      description: "ТЕРМІНИ: 1 МІСЯЦЬ/50м²"
       details:
         - виїзд на обʼєкт
         - складання обмірного плану
@@ -164,10 +159,10 @@ prices:
         - створення фото реалістичних візуалізацій інтерʼєру 
         - підбір матеріалів, меблів та обладнання 
         - 1-3 виїзди на будівництво
-      price: 450/м2
+      price: 450/м²
       currency: ₴
     - title: ДИЗАЙН БІЗНЕС-ПРОЕКТ 
-      description: "ТЕРМІНИ: 14 ДНІВ/50м2"
+      description: "ТЕРМІНИ: 14 ДНІВ/50м²"
       details:
         - виїзд на обʼєкт
         - складання обмірного плану
@@ -177,11 +172,23 @@ prices:
         - підбір матеріалів, меблів та обладнання 
         - 1-3 виїзди на будівництво
         - допомога з вибором та закупівлею матеріалів
-      price: 450/м2
+      price: 450/м²
       currency: ₴
   bottom:
+    - title: ПРОЕКТ ПІД КЛЮЧ
+      description: "ТЕРМІНИ:  ДО 6 МІСЯЦІВ"
+      details:
+        - розробка повного дизайн проекту
+        - підбір виконавців, вибір з 4-х перевірених бригад
+        - підбір чистових матеріалів та аналогів безпосередньо в магазинах, робота з менеджерами
+        - контроль етапів виконання будівельних процесів, вирішення проблемних ситуацій
+        - підбір меблевих виробів, сантехніки та текстилю
+        - фотозвіт щотри дні під час ведення будівництва
+      price: 1000/м²
+      currency: ₴
     - title: ПОВНИЙ ДИЗАЙН-ПРОЕКТ 
-      description: "ТЕРМІНИ: 2 МІСЯЦІ/50м2"
+      exclusive: true
+      description: "ТЕРМІНИ: 2 МІСЯЦІ/50м²"
       details:
         - виїзд на обʼєкт
         - складання обмірного плану
@@ -193,19 +200,7 @@ prices:
         - підбір матеріалів, меблів та обладнання 
         - 1-3 виїзди на будівництво
         - оф-лайн підбір матеріалів у магазинах (до 3 виїздів)
-      price: 700/м2
-      currency: ₴
-    - title: ПРОЕКТ ПІД КЛЮЧ
-      exclusive: true
-      description: "ТЕРМІНИ:  ДО 6 МІСЯЦІВ"
-      details:
-        - розробка повного дизайн проекту
-        - підбір виконавців, вибір з 4-х перевірених бригад
-        - підбір чистових матеріалів та аналогів безпосередньо в магазинах, робота з менеджерами
-        - контроль етапів виконання будівельних процесів, вирішення проблемних ситуацій
-        - підбір меблевих виробів, сантехніки та текстилю
-        - фотозвіт щотри дні під час ведення будівництва
-      price: 1000/м2
+      price: 700/м²
       currency: ₴
     - title: ЛАНДШАФТНИЙ ДИЗАЙН 
       description: "ТЕРМІНИ:  1 місяць"
@@ -225,3 +220,16 @@ pricing:
   subtitle: IMPROVING YOUR LIFE(У)
   title: "GREAT OFFER <br> FOR YOU(У)"
   description: "Integer eleifend at tortor et finibus. Pellentesque nec nisi arcu. Ut ante ex, pulvinar eget purus nec, varius rutrum erat. Aliquam elementum non sapien pretium faucibus. In convallis maximus turpis.(У)"
+statistics:
+  years: РОКІВ ДОСВІДУ
+  projects_completed: ВИКОНАНИХ ПРОЕКТІВ
+history:
+  section_1:
+    title: ЗАСНОВАНО
+    description: Біба без хліба
+  section_2:
+    title: ПЕРЕЇЗД
+    description: біба з хлібом
+  section_3:
+    title: РОЗВИТОК
+    description: біба з хлібом і маслом
