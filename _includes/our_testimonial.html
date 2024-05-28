@@ -34,7 +34,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col mb-3">
-                                                    <img src="{{ feedback.image }}" alt="" class="img-fluid">
+                                                    <img src="{{ feedback.image }}" alt="{{ feedback.description }}" class="img-fluid">
                                                 </div>
                                             </div>
                                         </div>
@@ -74,7 +74,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col mb-3">
-                                                    <img src="{{ feedback.image }}" alt="" class="img-fluid">
+                                                    <img src="{{ feedback.image }}" alt="{{ feedback.description }}" class="img-fluid">
                                                 </div>
                                             </div>
                                         </div>
@@ -96,7 +96,7 @@
                                     <!-- Slides -->
                                     {% assign image_files = site.static_files | where: "partners", true %}
                                     {% for image in image_files %}
-                                      <div class="swiper-slide"><img src="{{ image.path }}" alt="{{ image.name }}"class="img-fluid"></div>
+                                      <div class="swiper-slide"><img src="{{ image.path }}" alt="{{ image.name }}" class="img-fluid"></div>
                                     {% endfor %}
 
                                 </div>

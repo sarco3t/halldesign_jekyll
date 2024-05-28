@@ -52,35 +52,23 @@
                 <div class="row row-cols-1 row-cols-lg-2">
                     <div class="col mt-lg-5 mb-3">
                         <div class="d-flex flex-column gap-3">
-                            <div class="card bg-transparent">
-                                <img src="image/dummy-img-600x400.jpg" class="img-fluid" alt="...">
-
-                            </div>
-                            <div class="card bg-transparent">
-                                <img src="image/dummy-img-600x400.jpg" class="img-fluid" alt="...">
-                            </div>
-                            <div class="card bg-transparent">
-                                <img src="image/dummy-img-600x400.jpg" class="img-fluid" alt="...">
-                            </div>
-                            <div class="card bg-transparent">
-                                <img src="image/dummy-img-600x400.jpg" class="img-fluid" alt="...">
-                            </div>
+                            {% assign image_files = site.static_files | where: "we_work", true %}
+                            {% assign size = image_files | size %}
+                            {% assign half_size = size | divided_by: 2 | ceil | %}
+                            {% for image in image_files limit: half_size %}
+                                <div class="card bg-transparent">
+                                    <img src="{{ image.path }}" class="img-fluid" alt="{{ image.name }}">
+                                </div>
+                            {% endfor %}
                         </div>
                     </div>
                     <div class="col mb-3">
                         <div class="d-flex flex-column gap-3">
-                            <div class="card bg-transparent">
-                                <img src="image/dummy-img-600x400.jpg" class="img-fluid" alt="...">
-                            </div>
-                            <div class="card bg-transparent">
-                                <img src="image/dummy-img-600x400.jpg" class="img-fluid" alt="...">
-                            </div>
-                            <div class="card bg-transparent">
-                                <img src="image/dummy-img-600x400.jpg" class="img-fluid" alt="...">
-                            </div>
-                            <div class="card bg-transparent">
-                                <img src="image/dummy-img-600x400.jpg" class="img-fluid" alt="...">
-                            </div>
+                            {% for image in image_files offset: half_size %}
+                                <div class="card bg-transparent">
+                                    <img src="{{ image.path }}" class="img-fluid" alt="{{ image.name }}">
+                                </div>
+                            {% endfor %}
                         </div>
                     </div>
                 </div>

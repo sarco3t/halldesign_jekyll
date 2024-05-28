@@ -46,6 +46,10 @@ defaults:
       path: "image/partners"
     values:
       partners: true
+  - scope:
+      path: "image/we_work"
+    values:
+      we_work: true
 plugins:
   - jekyll-feed
   - jekyll-multiple-languages-plugin
