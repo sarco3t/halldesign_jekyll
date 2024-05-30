@@ -3,41 +3,20 @@
         <div class="row row-cols-1 row-cols-lg-2">
             <div class="col mb-3">
                 <div class="position-relative">
-                    <img src="image/dummy-img-600x600.jpg" alt="" class="img-fluid" style="z-index: -2;">
-                    <div class="position-absolute bottom-0 start-0 ms-4 mb-4">
-                        <!-- Button trigger modal -->
-                        <div class="d-flex flex-row gap-3 align-items-center">
-                            <button type="button" class="btn request-loader" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
-                                <i class="fa-solid fa-play"></i>
-                            </button>
-                            <span class="text-white fw-semibold font-1 fs-5">{% t video.main_title %}</span>
-                        </div>
-
-                        <!-- Modal -->
-                        <div class="modal fade bg-overlay" id="exampleModal" tabindex="-1"
-                            aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered modal-lg">
-                                <div class="modal-content bg-dark-color">
-                                    <iframe class="ifr-video"
-                                        src="https://www.youtube.com/embed/FK2RaJ1EfA8?autoplay=1"
-                                        frameborder="0"></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <video loop autoplay muted class="img-fluid">
+                        <source src="/image/video.mp4" type="video/mp4" />
+                    </video>
+                      
                 </div>
             </div>
             <div class="col mb-3">
                 <div class="d-flex flex-column gap-3 shadow p-3">
-                    <h5 class="accent-color font-1 fw-semibold">{% t video.main_title %}</h5>
                     <h3 class="text-black font-2 fw-semibold">{% t video.title %}</h3>
                     <p class="text-gray font-1">
                         {% t video.description %}
                     </p>
                     <div>
-                        <a href=" " type="button"
-                            class="btn rounded-0 bg-dark-color bg-accent-color-hover text-white">{% t video.button %}</a>
+                        <a href="{% link history.html %}" type="button" class="btn rounded-0 bg-dark-color bg-accent-color-hover text-white">{% t video.button %}</a>
                     </div>
                 </div>
             </div>

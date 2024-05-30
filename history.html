@@ -2,7 +2,7 @@
 permalink: history
 ---
 <main>
-    <section class="section position-relative" style="background-image: url(image/dummy-img-1920x900.jpg);">
+    <section class="section position-relative" style="background-image: url(/image/history/background.JPG);">
         <div class="r-container">
             <div class="image-overlay"></div>
             <div class="d-flex flex-column position-relative py-5" style="z-index: 2;">
@@ -22,7 +22,7 @@ permalink: history
             <div class="row row-cols-1 row-cols-lg-3">
                 <div class="col col-lg-4">
                     <div class="d-flex flex-column gap-3">
-                        <h5 class="accent-color font-1 fw-semibold">2019</h5>
+                        <h5 class="accent-color font-1 fw-semibold">2019-2020</h5>
                         <h3 class="font-2 fw-semibold">{% t history.section_1.title %}</h3>
                         <p class="text-gray">
                             {% t history.section_1.description %}
@@ -32,32 +32,22 @@ permalink: history
                 <div class="col col-lg-6">
                     <div class="d-flex flex-column gap-3">
                         <p class="text-gray">
-                            Ut in rhoncus sem. Maecenas finibus placerat mi, ornare tempus purus eleifend vitae.
-                            Curabitur a orci vel diam interdum hendrerit commodo in mi. Nunc consequat felis vitae
-                            nulla feugiat, a ultricies ligula placerat.
-                            <br><br>
-                            Aliquam nec mauris et purus pretium eleifend in et erat. Sed in ullamcorper ex. Sed quis
-                            massa quis risus semper porta eget ac mauris. Pellentesque vel nisi velit.
+                            {% t history.section_1.text %}
                         </p>
                         <div class="row row-cols-1 row-cols-lg-2">
                             <div class="col">
                                 <div class="d-flex flex-column">
-                                    <img src="image/dummy-img-600x400.jpg" alt="" class="img-fluid mb-3">
-                                    <h6 class="m-0">DYAS KARDINAL</h6>
-                                    <span class="text-gray">Founder</span>
+                                    <img src="/image/history/section_1.jpg" alt="" class="img-fluid mb-3">
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="d-flex flex-column">
-                                    <img src="image/dummy-img-600x400.jpg" alt="" class="img-fluid mb-3">
-                                    <h6 class="m-0">DYAS KARDINAL</h6>
-                                    <span class="text-gray">Founder</span>
+                                    <img src="/image/history/section_1_2.jpg" alt="" class="img-fluid mb-3">
                                 </div>
                             </div>
                         </div>
                         <p class="text-gray">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
-                            ullamcorper mattis, pulvinar dapibus leo.
+                            {% t history.section_1.bottom_text %}
                         </p>
                     </div>
                 </div>
@@ -70,7 +60,7 @@ permalink: history
             <div class="row row-cols-1 row-cols-lg-3">
                 <div class="col col-lg-4">
                     <div class="d-flex flex-column gap-3">
-                        <h5 class="accent-color font-1 fw-semibold">2020</h5>
+                        <h5 class="accent-color font-1 fw-semibold">2020 - 2024</h5>
                         <h3 class="font-2 fw-semibold">{% t history.section_2.title %}</h3>
                         <p class="text-gray">
                             {% t history.section_2.description %}
@@ -79,33 +69,23 @@ permalink: history
                 </div>
                 <div class="col col-lg-6">
                     <div class="d-flex flex-column gap-3">
-                        <p class="text-gray">
-                            Ut in rhoncus sem. Maecenas finibus placerat mi, ornare tempus purus eleifend vitae.
-                            Curabitur a orci vel diam interdum hendrerit commodo in mi. Nunc consequat felis vitae
-                            nulla feugiat, a ultricies ligula placerat.
-                        </p>
-                        <ul class="text-gray" style="list-style: disc;">
-                            <li>Fusce at tellus nec erat</li>
-                            <li>Mauris ligula ex</li>
-                            <li>Proin auctor dapibus urna</li>
-                        </ul>
-                        <p class="text-gray">Curabitur a orci vel diam interdum hendrerit commodo in mi. Nunc
-                            consequat felis vitae nulla feugiat, a ultricies ligula placerat.</p>
+                        <div class="text-gray">
+                            {{ site.translations[site.lang].history.section_2.text | markdownify }}
+                        </div>
                         <div class="row row-cols-1 row-cols-lg-2">
                             <div class="col">
                                 <div class="d-flex flex-column">
-                                    <img src="image/dummy-img-600x400.jpg" alt="" class="img-fluid mb-3">
+                                    <img src="/image/history/section_2.jpg" alt="" class="img-fluid mb-3">
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="d-flex flex-column">
-                                    <img src="image/dummy-img-600x400.jpg" alt="" class="img-fluid mb-3">
+                                    <img src="/image/history/section_2_2.jpg" alt="" class="img-fluid mb-3">
                                 </div>
                             </div>
                         </div>
                         <p class="text-gray">
-                            Fusce fringilla feugiat ipsum, nec rhoncus sapien dictum sed. Phasellus quis libero
-                            elit. Proin eget elit sed felis finibus lobortis nec nec ipsum.
+                            {% t history.section_2.bottom_text %}
                         </p>
                     </div>
                 </div>
@@ -118,7 +98,7 @@ permalink: history
             <div class="row row-cols-1 row-cols-lg-2">
                 <div class="col col-lg-4">
                     <div class="d-flex flex-column gap-3">
-                        <h5 class="accent-color font-1 fw-semibold">2024</h5>
+                        <h5 class="accent-color font-1 fw-semibold">2024 - NOW</h5>
                         <h3 class="font-2 fw-semibold">{% t history.section_3.title %}</h3>
                         <p class="text-gray">
                             {% t history.section_3.description %}
@@ -127,14 +107,7 @@ permalink: history
                 </div>
                 <div class="col col-lg-8">
                     <div class="d-flex flex-column gap-3">
-                        <p class="text-gray">
-                            Ut in rhoncus sem. Maecenas finibus placerat mi, ornare tempus purus eleifend vitae.
-                            Curabitur a orci vel diam interdum hendrerit commodo in mi. Nunc consequat felis vitae
-                            nulla feugiat, a ultricies ligula placerat.
-                            <br><br>
-                            Aliquam nec mauris et purus pretium eleifend in et erat. Sed in ullamcorper ex. Sed quis
-                            massa quis risus semper porta eget ac mauris. Pellentesque vel nisi velit.
-                        </p>
+                        <p class="text-gray">{% t history.section_3.top_text %}</p>
                         <div class="row row-cols-1 row-cols-lg-2">
                             <div class="col">
                                 <div class="d-flex flex-column">
@@ -143,20 +116,12 @@ permalink: history
                             </div>
                             <div class="col">
                                 <p class="text-gray">
-                                    Cras sagittis justo enim, eu sagittis purus molestie vitae. Vestibulum porttitor
-                                    in
-                                    massa feugiat blandit. Nunc ac viverra magna. Etiam dictum pellentesque libero a
-                                    porttitor. Vestibulum dapibus, metus a molestie tincidunt, tortor nisl mollis
-                                    mi,
-                                    vitae commodo lorem mi auctor tellus. Interdum et malesuada fames ac ante ipsum
-                                    primis in faucibus.
+                                    {% t history.section_3.text %}
                                 </p>
                             </div>
                         </div>
                         <p class="text-gray">
-                            In hac habitasse platea dictumst. Aliquam fringilla est ut vulputate sollicitudin. Fusce
-                            fringilla feugiat ipsum, nec rhoncus sapien dictum sed. Phasellus quis libero elit.
-                            Proin eget elit sed felis finibus lobortis nec nec ipsum.
+                            {% t history.section_3.bottom_text %}
                         </p>
                     </div>
                 </div>
