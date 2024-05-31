@@ -76,10 +76,6 @@ designers:
       name: Олег
       image: /image/team/oleg.jpg
       behance: https://www.behance.net/olehhumennyi
-    - role: Дизайнер інтерʼєру, проєктувальник, досвід роботи - з 2023 року  
-      name: Діана
-      image: /image/team/diana.jpg
-      behance: https://www.behance.net/7fe77900
   en:
     - role: Дизайнер  
       name: Крістіна
@@ -93,7 +89,3 @@ designers:
       name: Олег
       image: /image/team/oleg.jpg
       behance: https://www.behance.net/olehhumennyi
-    - role: Дизайнер  
-      name: Діана
-      image: /image/team/diana.jpg
-      behance: https://www.behance.net/7fe77900
