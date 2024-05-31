@@ -26,6 +26,7 @@ module Jekyll
           :jpegoptim => {:max_quality => 50}
         })
 
+      return if File.file? @config["cache_file"]
       # Read the cache file, if it exists.
       @last_update = YAML.safe_load(File.read(@config["cache_file"]), permitted_classes: [Time]) if File.file? @config["cache_file"]
       @last_update ||= {}
