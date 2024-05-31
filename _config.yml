@@ -53,7 +53,8 @@ defaults:
 plugins:
   - jekyll-feed
   - jekyll-multiple-languages-plugin
-
+image_optim:
+  image_glob: "image/**/*.{gif,jpg,jpeg,png}"
 email: hall.designes@gmail.com
 ua_phone_number: +38(098)62-84-391
 eu_phone_number: ""
@@ -64,28 +65,28 @@ years_of_expirience: 5
 projects_completed: 185
 designers:
   ua:
-    - role: Керівник студії Hall Design, головний дизайнер, створюю інтерʼєри з 2017 року  
+    - role: Керівник студії Hall Design, головний дизайнер, створюю інтерʼєри з 2017 року
       name: Крістіна
       image: /image/team/kris.jpg
       behance: https://www.behance.net/kristingalykin
-    - role: Дизайнер інтерʼєру, візуалізатор, проєктувальник, досвід роботи - з 2021 року  
+    - role: Дизайнер інтерʼєру, візуалізатор, проєктувальник, досвід роботи - з 2021 року
       name: Людмила
       image: /image/team/liuda.jpg
       behance: https://www.behance.net/lyudmikulesha
-    - role: Дизайнер інтерʼєру, візуалізатор, досвід роботи - з 2022 року  
+    - role: Дизайнер інтерʼєру, візуалізатор, досвід роботи - з 2022 року
       name: Олег
       image: /image/team/oleg.jpg
       behance: https://www.behance.net/olehhumennyi
   en:
-    - role: Дизайнер  
+    - role: Дизайнер
       name: Крістіна
       image: /image/team/kris.jpg
       behance: https://www.behance.net/kristingalykin
-    - role: Дизайнер  
+    - role: Дизайнер
       name: Людмила
       image: /image/team/liuda.jpg
       behance: https://www.behance.net/lyudmikulesha
-    - role: Дизайнер  
+    - role: Дизайнер
       name: Олег
       image: /image/team/oleg.jpg
       behance: https://www.behance.net/olehhumennyi
