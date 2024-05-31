@@ -27,7 +27,7 @@ module Jekyll
         })
 
       # Read the cache file, if it exists.
-      @last_update = YAML::load_file @config["cache_file"] if File.file? @config["cache_file"]
+      @last_update = YAML.safe_load(File.read(@config["cache_file"]), permitted_classes: [Time]) if File.file? @config["cache_file"]
       @last_update ||= {}
 
       # Create the originals directory.
