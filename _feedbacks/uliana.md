@@ -1,7 +1,7 @@
 ---
 name: Уляна 
 description: Дизайн квартири
-image: /image/feedbacks/uliana.jpg
+image: /image/feedbacks/uliana.webp
 ---
 
 Добрий день, ми з чоловіком з результату просто в шоці, настільки все шикарно. Виправлень немає) нам все подобається

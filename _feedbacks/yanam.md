@@ -1,7 +1,7 @@
 ---
 name: Яна
 description: студія краси VRODA
-image: /image/feedbacks/yanam.jpg
+image: /image/feedbacks/yanam.webp
 ---
 
 Боже мій💓 невже це моя студія плачу..

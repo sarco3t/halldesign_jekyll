@@ -53,6 +53,7 @@ defaults:
 plugins:
   - jekyll-feed
   - jekyll-multiple-languages-plugin
+  - jekyll-webp
 
 email: hall.designes@gmail.com
 ua_phone_number: +38(098)62-84-391
@@ -64,28 +65,66 @@ years_of_expirience: 5
 projects_completed: 185
 designers:
   ua:
-    - role: Керівник студії Hall Design, головний дизайнер, створюю інтерʼєри з 2017 року  
+    - role: Керівник студії Hall Design, головний дизайнер, створюю інтерʼєри з 2017 року
       name: Крістіна
-      image: /image/team/kris.jpg
+      image: /image/team/kris.webp
       behance: https://www.behance.net/kristingalykin
-    - role: Дизайнер інтерʼєру, візуалізатор, проєктувальник, досвід роботи - з 2021 року  
+    - role: Дизайнер інтерʼєру, візуалізатор, проєктувальник, досвід роботи - з 2021 року
       name: Людмила
-      image: /image/team/liuda.jpg
+      image: /image/team/liuda.webp
       behance: https://www.behance.net/lyudmikulesha
-    - role: Дизайнер інтерʼєру, візуалізатор, досвід роботи - з 2022 року  
+    - role: Дизайнер інтерʼєру, візуалізатор, досвід роботи - з 2022 року
       name: Олег
-      image: /image/team/oleg.jpg
+      image: /image/team/oleg.webp
       behance: https://www.behance.net/olehhumennyi
   en:
-    - role: Дизайнер  
+    - role: Дизайнер
       name: Крістіна
-      image: /image/team/kris.jpg
+      image: /image/team/kris.webp
       behance: https://www.behance.net/kristingalykin
-    - role: Дизайнер  
+    - role: Дизайнер
       name: Людмила
-      image: /image/team/liuda.jpg
+      image: /image/team/liuda.webp
       behance: https://www.behance.net/lyudmikulesha
-    - role: Дизайнер  
+    - role: Дизайнер
       name: Олег
-      image: /image/team/oleg.jpg
+      image: /image/team/oleg.webp
       behance: https://www.behance.net/olehhumennyi
+
+############################################################
+# Site configuration for the WebP Generator Plugin
+# The values here represent the defaults if nothing is set
+webp:
+  enabled: true
+
+  # The quality of the webp conversion 0 to 100 (where 100 is least lossy)
+  quality: 75
+
+  # List of directories containing images to optimize, nested directories will only be checked if `nested` is true
+  # By default the generator will search for a folder called `/img` under the site root and process all jpg, png and tiff image files found there.
+  img_dir: ["image"]
+
+  # Whether to search in nested directories or not
+  nested: true
+
+  # add ".gif" to the format list to generate webp for animated gifs as well
+  formats: [".jpeg", ".jpg", ".png", ".tiff", ".JPG", ".PNG"]
+
+  # File extensions for animated gif files
+  gifs: [".gif"]
+
+  # Set to true to always regenerate existing webp files
+  regenerate: false
+
+  # Local path to the WebP utilities to use (relative or absolute)
+  # Omit or leave as nil to use the utilities shipped with the gem, override only to use your local install
+  # Eg : "/usr/local/bin/cwebp"
+#  webp_path: nil
+
+  # List of files or directories to exclude
+  # e.g. custom or hand generated webp conversion files
+  exclude: []
+
+  # append '.webp' to filename after original extension rather than replacing it.
+  # Default transforms `image.png` to `image.webp`, while changing to true transforms `image.png` to `image.png.webp`
+  append_ext: false
