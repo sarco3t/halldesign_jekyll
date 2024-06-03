@@ -10,7 +10,7 @@
                     </div>
                     <div class="d-flex flex-row gap-3  align-items-center">
                         <i class="fa-solid fa-phone accent-color fs-4"></i>
-                        <a href="tel:{{ site.ua_phone_number }}">
+                        <a href="tel:{{ site.ua_phone_number }}" aria-label="{{ site.ua_phone_number }}">
                             <span class="text-white">{{ site.ua_phone_number }}</span>
                         </a>
                     </div>
@@ -26,7 +26,7 @@
         <div class="r-container">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    <a class="navbar-brand logo-container" href="{% link index.html %}">
+                    <a class="navbar-brand logo-container" href="{% link index.html %}" aria-label="Logo">
                         <img src="{{ '/image/logo.webp' }}" alt="" class="img-fluid">
                     </a>
                     <button class="navbar-toggler accent-color" type="button" data-bs-toggle="collapse"
