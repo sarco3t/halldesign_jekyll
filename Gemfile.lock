@@ -1,6 +1,6 @@
 GIT
-  remote: git@github.com:sverrirs/jekyll-webp.git
-  revision: 162996d3def96558a07fda9c58679d08afafef1f
+  remote: git@github.com:sarco3t/jekyll-webp.git
+  revision: 84d81fb0f8631ce486e11cd0ca0e9f94d7e8755a
   specs:
     jekyll-webp (1.0.0)
 
@@ -15,7 +15,7 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
-    ffi (1.16.3)
+    ffi (1.17.0)
     forwardable-extended (2.6.0)
     google-protobuf (3.25.3-x86_64-linux)
     http_parser.rb (0.8.0)
@@ -95,4 +95,4 @@ DEPENDENCIES
   wdm (~> 0.1.1)
 
 BUNDLED WITH
-   2.4.6
+   2.4.22
