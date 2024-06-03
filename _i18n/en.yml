@@ -1,20 +1,9 @@
-global:
-  tagline: English
-  about: About
-  twitter: Twitter
-  github: GitHub
-langs:
-  it: Italiano
-  en: English
-  es: Español
-
-titles:
-  pagination: Pagination
+contact_now: CONTACT NOW
 contact_us:
   contact_us: CONTACT US
   have_a_question: HAVE A QUESTION ?
   address: Zarichanska st. 13, Khmelnytskyi, Ukraine
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus necullamcorper mattis, pulvinar dapibus leo."
+  description: "You can call us during business hours, or fill out the form and we will get back to you within 5-10 minutes. We are also available on all messaging apps, so just choose the one that is convenient for you."
   form:
     name: Name
     phone: Phone
@@ -37,31 +26,36 @@ header:
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus necullamcorper mattis, pulvinar dapibus leo."
   message_sent: Your Message Successfully Send.
 categories:
-  private: PRIVATE PROJECTS
+  private: RESIDENTIAL PROJECTS
   commercial: COMMERCIAL PROJECTS
   landscape: LANDSCAPE & ARCHITECTURE
   descriptions:
-      private: PRIVATE PROJECTS desc
-      commercial: COMMERCIAL PROJECTS desc
-      landscape: LANDSCAPE & ARCHITECTURE desc
+    private: "Interior design is a reflection of your world, your habits, and your lifestyle. We focus on your way of life, designing a space where your family will thrive. Your perfect Saturday mornings in a sunny kitchen or cozy winter evenings will be thoughtfully crafted to become your warmest memories."
+    commercial: "Let your business sell itself. We create interiors that become unforgettable trademarks, allowing clients to directly associate your product or service with your brand."
+    landscape: "Creating surrounding spaces through the lens of interior ergonomics. This is our unique approach – making extraordinarily convenient buildings."
 home:
   main:
     text_1: TRANSFORM SPACE
     text_2: INTO ART
     left_button: PROJECTS
     right_button: PRICING
+project:
+  square: Area
+  location: Location
+  price: Price
+  designer: Designer
+  project_info: About the Project
 footer:
-  text: " eng Nunc a purus sit amet nulla porttitor auctor vitae eu purus. Suspendisse non
-                            bibendum lectus. Mauris ut dignissim arcu, vel euismod mi. Pellentesque ut velit
-                            dictum, dignissim dui non, pulvinar lectus. Etiam non mi vestibulum, aliquam lacus
-                            mattis."
+  text: "Interior design is the art of creating a comfortable space; it tells your story, whether it is happy, caring, vibrant, or very serene.<br/>
+In the process of creating your ideal space, always with love, your Hall Design team."
+
 services:
   services: SERVICES
   blocks:
     block1:
       title: INTERIOR DESIGN
       description:  Fusce eleifend lorem et placerat eleifend.
-    block2: 
+    block2:
       title: OFFICE REDESIGN
       description:  Fusce eleifend lorem et placerat eleifend.
     block3:
@@ -80,59 +74,178 @@ services:
     section_description: "Aenean erat ipsum, euismod auctor augue ac, hendrerit lacinia lorem. Ut nec leo id justo  luctus accumsan sed id dolor. Sed ac rhoncus diam, sit amet tempor ligula."
     section_button: CONTACT US
   work_section:
-    subtitle: HOW DO WE WORK ?
-    title: WE DESIGN FOR YOUR SATISFACTION
-    description: "In hac habitasse platea dictumst. Aliquam fringilla est ut vulputate sollicitudin. Fusce fringilla feugiat ipsum, nec rhoncus sapien dictum sed. Phasellus quis libero elit."
+    subtitle: HOW DOES THE WORK HAPPEN?
+    title: STAGES OF DESIGN PROJECT DEVELOPMENT
+    description: The number of stages and development time depend on the area and complexity of the project, with the first two stages being mandatory in all packages.
     step1:
-      title: CONCEPT
-      description: Mauris dapibus consectetur enim a dictum. Ut in rhoncus sem.
+      title: MEASUREMENTS
+      description: On-site visit, drafting the measurement plan
     step2:
-      title: CONCEPT
-      description: Mauris dapibus consectetur enim a dictum. Ut in rhoncus sem.
+      title: PLANNING
+      description: Development of furniture layout options, installation/demolition plan, engineering network schemes
     step3:
-      title: CONCEPT
-      description: Mauris dapibus consectetur enim a dictum. Ut in rhoncus sem.
+      title: VISUALIZATION
+      description: Creation of photorealistic interior visualizations, concept development, creation of 360-degree view
     step4:
-      title: CONCEPT
-      description: Mauris dapibus consectetur enim a dictum. Ut in rhoncus sem.
+      title: DRAWINGS AND SPECIFICATIONS DEVELOPMENT
+      description: All drawings for construction work, custom furniture drawings, complex node drawings, selection of materials, furniture, lighting, plumbing, and decor with links to stores.
 our_testimonial:
-  partners: OUR PARTNER
-  partners_text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
-  subtitle: OUR TESTIMONIAL
-  title: WHAT OUR CLIENT SAY ?
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus necullamcorper mattis, pulvinar dapibus leo."
+  partners: OUR CLIENTS
+  partners_text: "We would be happy to count you among our clients"
+  subtitle: TESTIMONIALS
+  title: WHAT THEY SAY ABOUT US
+  description: "The best feedback for our work is a genuine smile from our clients, and in turn, we sincerely rejoice in each of your achievements."
+
 welcome:
-  subtitle: WELCOME TO HOUSEDECO
-  title: INTERIOR DESIGN
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
+  subtitle: The Main Idea of Our Company
+  title: YOU = ART
+  description: "At the top of every masterpiece stands an artist, every grand structure was once commissioned by a client and executed by a craftsman. Human creates and progresses art. Human moves it, pressing the buttons deemed necessary. So, art should not be evaluated separately from the person, as it is a reflection in the mirror."
   steps:
     step1:
-      title: INNOVATIVE
-      description: "Nulla a interdum ipsum. Proin orci nunc, efficitur quis vehicula ac, iaculis et massa. Etiam interdum, justo finibus hendrerit vulputate, augue massa porta tellus, eget imperdiet nisl libero at risus."
+      title: HOW DOES IT REFLECT IN INTERIOR?
+      description: "By placing the individual at the center of art as an art object, we strive to recreate your mood in space to the maximum. To push you towards the best version of yourself. To help you know and love yourself, understand yourself. Our values are shaped by the emotional and psychological perception of space by our clients. We want to make a person's stay in space as comfortable as possible, and for this, we constantly study you, ask a million questions, like interior psychologists."
     step2:
-      title: CREATIVE
-      description: "Nulla in eros sit amet sapien viverra pretium. Ut luctus libero ipsum, eget varius nibh dapibus vitae. Sed non enim felis. Quisque eget tincidunt ligula. Quisque odio odio."
+      title: OUR IDEAL
+      description: "Our direct ideal is the personalization of space without budget constraints. We believe that it is not the price that forms the uniqueness of the product, but its value. Therefore, regardless of your budget, we design interiors where you feel comfortable, emotional, calm, and joyful, and everything else that reflects your personality."
+
 team:
-  title: OUR TEAM
+  title: Our Team
   section:
-    subtitle: MEET OUR DESIGNER
-    title: OUR PROFESSIONAL
-    description: "Cras sagittis justo enim, eu sagittis purus molestie vitae. Vestibulum porttitor in massa feugiat blandit. Nunc ac viverra magna. Etiam dictum pellentesque libero a porttitor. Vestibulum dapibus, metus a molestie tincidunt, tortor nisl mollis mi, vitae commodo lorem mi auctor tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus."
+    title: Your Designers
+    description: "Hall Design is a special creative family where each of us has our own strengths, styles, and work paces. That's why we excel at combining work in different directions. We work excellently with offices, cafes, beauty salons, hospitals, and of course residential premises. So, we are confident that we can bring your dream to life!"
 cta:
-  title: NEED TO REDESIGN YOUR LIVING SPACE ? HIRE US NOW
-  button: CONTACT US
+  title: HAVE QUESTIONS? CONTACT US
+  button: CONTACT
+  subtitle: INTERIOR = YOUR VISIT CARD
+#  title: ACHIEVE THE "FIRST IMPRESSION" EFFECT WITH US
 video:
-  main_title: WATCH VIDEO
-  title: INNOVATIVE IDEAS STYLISH DESIGNS
-  description: "Aenean erat ipsum, euismod auctor augue ac, hendrerit lacinia lorem. Ut nec leo id justo
-                        luctus accumsan sed id dolor. Sed ac rhoncus diam, sit amet tempor ligula. Cras maximus
-                        magna quis vestibulum lobortis."
+  title: THE ATMOSPHERE OF CREATIVE FLOW - OUR WAY OF LIFE
+  description: "Our days, like yours, are filled with a variety of events and emotions. Emotions are the key to bringing our ideas to life. From the very beginning, we abandoned the pursuit of working with stylistics and focused on conveying emotions in space."
   button: READ MORE
 latest_projects:
-  subtitle: OUR PROJECT
-  title: OUR LATEST PROJECT
-  description: "Cras sagittis justo enim, eu sagittis purus molestie vitae. Vestibulum porttitor in massa
-                feugiat blandit. Nunc ac viverra magna. Etiam dictum pellentesque libero a porttitor. Vestibulum
-                dapibus, metus a molestie tincidunt, tortor nisl mollis mi, vitae commodo lorem mi auctor
-                tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus."
+  title: LATEST PROJECTS
+  description: "Interior design is a reflection of your world, your habits, and your lifestyle. We focus on your way of life, designing a space where your family will thrive. Your perfect Saturday mornings in a sunny kitchen or cozy winter evenings will be thoughtfully crafted to become your warmest memories."
   more_button: SEE MORE
+prices:
+  top:
+    - title: TECHNICAL DESIGN PROJECT
+      description: "TIMELINE: 2 WEEKS/50m²"
+      details:
+        - on-site visit
+        - drafting the measurement plan
+        - development of furniture layout options
+        - electrical wiring plan (sockets, switches, lighting)
+        - plumbing layout plan
+      price: 250/m²
+      currency: ₴
+    - title: VISUAL DESIGN PROJECT
+      description: "TIMELINE: 1 MONTH/50m²"
+      details:
+        - on-site visit
+        - drafting the measurement plan
+        - development of furniture layout options
+        - network layout plan (electricity, plumbing, demolition works)
+        - creation of photorealistic interior visualizations
+        - selection of materials, furniture, and equipment
+        - 1-3 site visits
+      price: 450/m²
+      currency: ₴
+    - title: BUSINESS DESIGN PROJECT
+      description: "TIMELINE: 14 DAYS/50m²"
+      details:
+        - on-site visit
+        - drafting the measurement plan
+        - development of furniture layout options
+        - network layout plan (electricity, plumbing, installation, complex node layouts)
+        - creation of photorealistic interior visualizations
+        - selection of materials, furniture, and equipment
+        - 1-3 site visits
+        - assistance with the selection and purchase of materials
+      price: 450/m²
+      currency: ₴
+  bottom:
+    - title: TURNKEY PROJECT
+      description: "TIMELINE: UP TO 6 MONTHS"
+      details:
+        - development of a complete design project
+        - selection of contractors, choosing from 4 proven teams
+        - selection of finishing materials and their analogues directly in stores, working with managers
+        - control of construction stages, resolution of problematic situations
+        - selection of furniture, plumbing, and textiles
+        - photo report every three days during construction
+      price: 1000/m²
+      currency: ₴
+    - title: FULL DESIGN PROJECT
+      exclusive: true
+      description: "TIMELINE: 2 MONTHS/50m²"
+      details:
+        - on-site visit
+        - drafting the measurement plan
+        - development of furniture layout options
+        - package of plans for construction works
+        - wall layouts (detailed drawings)
+        - dimensional drawings of custom furniture (kitchen, wardrobe, etc.)
+        - creation of photorealistic interior visualizations
+        - selection of materials, furniture, and equipment
+        - 1-3 site visits
+        - offline selection of materials in stores (up to 3 visits)
+      price: 700/m²
+      currency: ₴
+    - title: LANDSCAPE DESIGN
+      description: "TIMELINE: 1 MONTH"
+      details:
+        - development of the master plan of the site
+        - plan of surface types and placement of road-path networks
+        - dendrological plan
+        - planting drawings
+        - site lighting scheme
+        - proposals for small architectural forms (gazebos, extensions, etc.)
+        - visualization
+        - video tour up to 1 minute
+        - cost calculation from partners
+      price: 3000/Ar
+      currency: ₴
+pricing:
+  subtitle: FORMING THE PROJECT COST
+  title: SERVICE PACKAGES
+  description: "Any design project is divided into three parts - schematic, visual, and economic. We either remove one of these parts in the service package or work on it in more detail. The most optimal option is a full design project, but as you can see, the content can vary."
+statistics:
+  years: YEARS OF EXPERIENCE
+  projects_completed: COMPLETED PROJECTS
+  subtitle: INTERESTING STATISTICS
+  title: A FEW NUMBERS ABOUT RENOVATION AND DESIGN
+  description: First and foremost, any renovation and design concerns the budget we need to allocate for the project, selecting materials based on it. So here is some statistics on how much, on average, our clients spend on different stages of renovation.
+  chart1: ROUGH AND ENGINEERING MATERIALS
+  chart2: CRAFTSMEN'S WORK
+  chart3: FINISHING, FURNITURE, AND HARDWARE
+history:
+  section_1:
+    title: FOUNDED
+    description: Self-discovery and purpose
+    bottom_text: "Our first steps did not always bring the expected result. But perseverance and a systematic approach to work are our main traits. Therefore, success awaited us in the future."
+    text: "<p>Finishing the 4th year of university, young and inspired by my works at the Synthesis of Arts exhibition, I decided to create my own company. Thinking about the name, I knew for sure that it had to be something that conveyed a sense of celebration, welcome, good intentions, and restraint. So the name HALL came naturally - a place that always greets us and is the first impression of a space, becoming its highlight and emotion.</p>
+  <p>
+  Of course, the first year was the most difficult in our career. We established our path, developed our traditions, got to know our clients and ourselves. We refined our project to meet the standards demanded by the market, not just GOST.
+  </p>"
+
+  section_2:
+    title: FIRST STEPS
+    description: Creating our own path
+    bottom_text: "We got everything we could from this stage, and maybe even a bit more. Grateful for each day - it was a happy time in our lives, full of various emotions."
+    text: >-
+      After the initial attempts and mistakes, we realized that staying in the shadows and gradually building up our experience was not for us. We wanted to make a statement, to be seen by people every day. So we decided to move to a shopping center to be visible to thousands of people every day. We learned communication, creativity, and sincerity even while being on display every day.
+
+      During this time we:
+        4. Changed 4 employees in our team;
+        5. Created 156 amazing projects;
+        6. Went through 2 quarantines and a full-scale invasion;
+        7. Doubled our team;
+        8. Took on our first international projects;
+
+      This office was our home, without which I couldn't imagine a single day.
+  section_3:
+    title: PRESENT DAY
+    description: Creative work flow
+    top_text: "As our team grew larger, the 20m² space became cramped. Therefore, at the end of 2023, the decision was made to move to a larger office located in the industrial heart of Khmelnytskyi - IQ CENTER."
+    text: "Now we feel like a creative family. We create various projects - interiors, exteriors, landscapes, architecture, product modeling, and technical projects. We have learned to listen to you and your wishes - that's why we offer super-fast projects in 2 weeks and projects that only include engineering plans. We have many service packages and means of communication. We prioritize comfort, convenience, and ease because renovation can often be stressful, so we are here to make this process easier for you and answer all your questions."
+    bottom_text: "Our story is written every day. Each day is different, just like us, just like you. But together - we make this world unbelievably beautiful. With love, your HALL DESIGN"
