@@ -4,3 +4,5 @@ _site
 .jekyll-metadata
 video.mov
 .idea
+.dev.vars
+node_modules

@@ -19,11 +19,11 @@ $(function () {
             $('.btn_submit-subscribe').html('Sending...');
             const toast = new bootstrap.Toast($('.success_msg')[0]);
             const errtoast = new bootstrap.Toast($('.error_msg')[0]);
-            var formData = forms.serialize();
+            var formData = forms.serializeArray()[0];
             $.ajax({
                 type: "POST",
-                url: "php/form_process.php",
-                data: formData,
+                url: "/form",
+                data: JSON.stringify(formData),
                 success: function (response) {
                     if (response == 'success') {
                         if (actionInput.length > 0) {
