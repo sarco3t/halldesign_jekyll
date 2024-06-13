@@ -4,6 +4,7 @@ contact_us:
   have_a_question: HAVE A QUESTION ?
   address: Zarichanska st. 13, Khmelnytskyi, Ukraine
   description: "You can call us during business hours, or fill out the form and we will get back to you within 5-10 minutes. We are also available on all messaging apps, so just choose the one that is convenient for you."
+  message_sent: Your Message Successfully Send.
   form:
     name: Name
     phone: Phone
@@ -20,6 +21,7 @@ header:
   history: HISTORY
   team: OUR TEAM
   services: SERVICES
+  services_item: SERVICES
   pricing: PRICING
   portfolio: PORTFOLIO
   contact_us: CONTACT
@@ -249,3 +251,29 @@ history:
     top_text: "As our team grew larger, the 20m² space became cramped. Therefore, at the end of 2023, the decision was made to move to a larger office located in the industrial heart of Khmelnytskyi - IQ CENTER."
     text: "Now we feel like a creative family. We create various projects - interiors, exteriors, landscapes, architecture, product modeling, and technical projects. We have learned to listen to you and your wishes - that's why we offer super-fast projects in 2 weeks and projects that only include engineering plans. We have many service packages and means of communication. We prioritize comfort, convenience, and ease because renovation can often be stressful, so we are here to make this process easier for you and answer all your questions."
     bottom_text: "Our story is written every day. Each day is different, just like us, just like you. But together - we make this world unbelievably beautiful. With love, your HALL DESIGN"
+how_we_do:
+  subtitle: HOW DOES IT WORK?
+  title: HOW DO WE TURN OUR GOAL INTO INTERIOR?
+  description: "Of course, beautiful words are nothing without a plan of action, which consists of small tasks we perform daily. We assume you are familiar with the concept of business process planning, so here's how we work together:"
+  steps:
+    step_1:
+      title: PLANNING AND CONCEPT
+      description: "At the first stage, we survey you, asking numerous detailed questions starting from your favorite color to the types of sinks you prefer. This is where the idea takes shape, forming the skeleton and the foundation that will support the entire project development. In our view, this is the most crucial stage in project development."
+    step_2:
+      title: VISUALIZATION
+      description: "The second stage is immersing ourselves in the world of beauty. After detailed planning, we take the helm and dive into the world of visualization. Here, magic happens, and you receive visualizations that are almost like photos; your future is already in your hands, but you can control it by changing colors and materials."
+    step_3:
+      title: DRAWINGS AND SPECIFICATIONS DEVELOPMENT
+      description: "Once you see your ideal, we transform into meticulous engineers. At this stage, our task is to examine every corner, every detail, to create your individual implementation instruction. Our goal is fewer calls and more beauty."
+  charts:
+    chart_1:
+      title: Beauty
+      description: "to enchant"
+    chart_2:
+      title: Documentation
+      description: "to implement"
+functionality:
+  subtitle: SUPPORTING COMPONENT OF THE PROCESS
+  title: DOCUMENTATION
+  description: "This includes not only electrical drawings. Here we have heating, ventilation, air conditioning, ceiling, floor, and many other plans; drawings of each wall, drawings of custom-made furniture, and most importantly - specifications of materials, furniture, lighting, and plumbing. It contains all the necessary information for procurement, quantities, and characteristics. Of course, with references on where to buy these items."
+  button: PRICES
