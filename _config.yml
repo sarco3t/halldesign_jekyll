@@ -18,18 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Hall Design
+
 collections:
   feedbacks:
     permalink: /feedbacks/:path/
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
 languages: ["ua", "en"]
 exclude_from_localizations: ["js", "image", "font", "css"]
 # Build settings
@@ -55,6 +47,7 @@ plugins:
   - jekyll-feed
   - jekyll-multiple-languages-plugin
   - jekyll-webp
+  - jekyll-seo-tag
 
 email: hall.designes@gmail.com
 ua_phone_number: +38(098)62-84-391
@@ -129,3 +122,24 @@ webp:
   # append '.webp' to filename after original extension rather than replacing it.
   # Default transforms `image.png` to `image.webp`, while changing to true transforms `image.png` to `image.png.webp`
   append_ext: false
+
+#SEO
+
+title: Hall Design
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+webmaster_verifications:
+  google: 1234
+  bing: 1234
+  alexa: 1234
+  facebook: 1234
+social:
+  name: Hall Design
+  links:
+    - https://www.behance.net/halldesign
+    - https://www.instagram.com/hall.design/
+    - https://pinterest.com/halldesign_ua/
+logo: /image/logo.webp
+# SEO END
