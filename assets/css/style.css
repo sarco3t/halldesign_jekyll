@@ -927,3 +927,9 @@ a {
         margin-top: 0;
     }
 }
+
+@media only screen and (max-width: 576px) {
+    .fs-7 {
+        font-size: 0.9rem !important;
+    }
+}
