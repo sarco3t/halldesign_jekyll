@@ -48,6 +48,7 @@ plugins:
   - jekyll-multiple-languages-plugin
   - jekyll-webp
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 email: hall.designes@gmail.com
 ua_phone_number: +38(098)62-84-391

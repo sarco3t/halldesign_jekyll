@@ -274,4 +274,26 @@ functionality:
   button: ЦІНИ
 pages:
   titles:
-      home: "home title"
+      home: "Головна"
+      about_us: "Мета"
+      pricing: "Ціни"
+      team: "Команда"
+      commercial: "Комерційні проекти"
+      services: "Послуги"
+      team: "Команда"
+      landscape: "Ландшафт та Архітектура"
+      private: "Житлові проекти"
+      contact: "Контакти"
+      history: "Історія"
+  descriptions:
+      home: "Головна"
+      about_us: "Мета"
+      pricing: "Ціни"
+      team: "Команда"
+      commercial: "Комерційні проекти"
+      services: "Послуги"
+      team: "Команда"
+      landscape: "Ландшафт та Архітектура"
+      private: "Житлові проекти"
+      contact: "Контакти"
+      history: "Історія"
