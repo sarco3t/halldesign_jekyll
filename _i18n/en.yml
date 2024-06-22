@@ -277,3 +277,26 @@ functionality:
   title: DOCUMENTATION
   description: "This includes not only electrical drawings. Here we have heating, ventilation, air conditioning, ceiling, floor, and many other plans; drawings of each wall, drawings of custom-made furniture, and most importantly - specifications of materials, furniture, lighting, and plumbing. It contains all the necessary information for procurement, quantities, and characteristics. Of course, with references on where to buy these items."
   button: PRICES
+pages:
+  titles:
+    home: "Home"
+    about_us: "About Us"
+    pricing: "Pricing"
+    team: "Team"
+    commercial: "Commercial Projects"
+    services: "Services"
+    landscape: "Landscape and Architecture"
+    private: "Residential Projects"
+    contact: "Contact"
+    history: "History"
+  descriptions:
+    home: "Discover HallDesign's exceptional architectural and design services. From residential to commercial projects, explore our portfolio of innovative solutions in landscape architecture and more. Let us bring your vision to life with creativity and precision."
+    about_us: "Discover more about HallDesign - our values, our team, and our passion for architecture and design. Explore how we blend creativity with professionalism in every project. Trust us to bring your ideas to life with unparalleled expertise and attention to detail."
+    pricing: "Discover the pricing details at HallDesign for our architectural and design services. Get insights into our transparent pricing structure for residential, commercial, and landscape projects. Learn how HallDesign delivers value and quality in every project, ensuring your vision meets your budget."
+    team: "Get to know the talented individuals who make up the HallDesign team. Learn about our architects, designers, and professionals dedicated to delivering excellence in every project. Discover how our diverse skills and collaborative approach ensure innovative and successful outcomes for your architectural and design needs."
+    commercial: "Discover the impressive portfolio of commercial projects by HallDesign. From innovative office spaces to dynamic retail environments, explore how our expertise in architecture and design transforms commercial spaces into functional and inspiring places. Learn how HallDesign delivers creative solutions that meet the unique needs of every commercial project."
+    services: "Explore the comprehensive range of architectural and design services offered by HallDesign. From residential planning to commercial architecture and landscape design, discover how our expertise and creativity transform ideas into reality. Learn how HallDesign delivers personalized solutions tailored to meet your unique project needs."
+    landscape: "Explore HallDesign's innovative design projects in landscapes and architecture. From residential gardens to urban revitalization, discover how our creative designs blend aesthetics with functionality. Learn how HallDesign creates inspiring and sustainable environments that reflect your vision."
+    private: "Discover HallDesign's exceptional private projects, from residential homes to exclusive estates. Explore how our tailored designs blend luxury with functionality, creating personalized living spaces that reflect your unique lifestyle. Learn how HallDesign turns dreams into reality with meticulous attention to detail."
+    contact: "Get in touch with HallDesign for all your architectural and design inquiries. Whether you're planning a new project or need more information about our services, our team is here to assist you. Reach out today and let's discuss how HallDesign can bring your vision to life."
+    history: "Explore the rich history and journey of HallDesign, from our humble beginnings to becoming a professional in the architecture and design industry. Learn about our milestones and achievements that define HallDesign's excellence in every project."
