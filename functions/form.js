@@ -15,6 +15,7 @@ function format({
 export async function onRequestPost({ request, env } ) {
     
     const body = await request.json()
+    console.log(body)
     const text = format(body)
     const response = await fetch(`https://api.telegram.org/bot${env.TELEGRAM_BOT_ID}/sendMessage`, {
       method: "POST",

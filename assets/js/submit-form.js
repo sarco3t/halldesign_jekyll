@@ -19,7 +19,7 @@ $(function () {
             $('.btn_submit-subscribe').html('Sending...');
             const toast = new bootstrap.Toast($('.success_msg')[0]);
             const errtoast = new bootstrap.Toast($('.error_msg')[0]);
-            var formData = forms.serializeArray()[0];
+            var formData = forms.serializeArray().reduce(function(a, x) { a[x.name] = x.value; return a; }, {});;
             $.ajax({
                 type: "POST",
                 url: "/form",
