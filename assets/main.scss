@@ -1,0 +1,12 @@
+---
+layout: null
+---
+
+{% include_relative css/vendor/bootstrap.min.css %}
+{% include_relative css/vendor/fontawesome.min.css %}
+{% include_relative css/vendor/brands.css %}
+{% include_relative css/vendor/regular.css %}
+{% include_relative css/vendor/solid.css %}
+{% include_relative css/vendor/swiper-bundle.min.css %}
+
+{% include_relative css/style.css %}

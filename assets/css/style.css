@@ -71,7 +71,7 @@ a:hover {
 
 button:hover,
 a[type="button"]:hover {
-    background-color: var(--accent-color) !;
+    background-color: var(--accent-color);
 }
 
 a {

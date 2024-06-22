@@ -18,7 +18,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-
+sass:
+  sass_dir: assets
+  style: compressed
 collections:
   feedbacks:
     permalink: /feedbacks/:path/
@@ -44,12 +46,17 @@ defaults:
     values:
       we_work: true
 plugins:
+  - jekyll-minifier
   - jekyll-feed
   - jekyll-multiple-languages-plugin
   - jekyll-webp
   - jekyll-seo-tag
+  - jekyll-sass-converter
   - jekyll-sitemap
 
+jekyll-minifier:
+  uglifier_args:
+    harmony: true
 email: hall.designes@gmail.com
 ua_phone_number: +38(098)62-84-391
 eu_phone_number: ""
